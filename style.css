@@ -144,3 +144,18 @@ header {
     color: var(--o-color) !important;
     text-shadow: 0 0 10px rgba(69, 123, 157, 0.2);
 }
+.select-header select {
+    background-color: transparent;
+    color: white;
+    border: none;
+    font-size: 1rem;
+    font-weight: bold;
+    text-align: center;
+    cursor: pointer;
+    outline: none;
+    width: 100%;
+}
+.select-header select option {
+    background-color: var(--secondary);
+    color: white;
+}
