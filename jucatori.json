@@ -1,0 +1,23 @@
+{
+  "echipe": [
+    "Dinamo Bucuresti", 
+    "FCSB", 
+    "Rapid Bucuresti", 
+    "CFR Cluj", 
+    "Universitatea Craiova", 
+    "Farul Constanta", 
+    "Astra Giurgiu",
+    "Universitatea Cluj"
+  ],
+  "jucatori": {
+    "Harlem Gnohere": ["Dinamo Bucuresti", "FCSB"],
+    "Denis Alibec": ["Farul Constanta", "FCSB", "Astra Giurgiu", "CFR Cluj"],
+    "Gabriel Tamas": ["Dinamo Bucuresti", "FCSB", "CFR Cluj", "Universitatea Cluj", "Astra Giurgiu"],
+    "Alexandru Chipciu": ["CFR Cluj", "FCSB", "Universitatea Cluj"],
+    "Ciprian Deac": ["CFR Cluj", "Rapid Bucuresti"],
+    "Nicolae Dica": ["FCSB", "CFR Cluj"],
+    "George Tucudean": ["Dinamo Bucuresti", "FCSB", "CFR Cluj", "Farul Constanta"],
+    "Florin Bratu": ["Rapid Bucuresti", "Dinamo Bucuresti"],
+    "Alexandru Mitrita": ["Viitorul", "Universitatea Craiova", "FCSB"]
+  }
+}
