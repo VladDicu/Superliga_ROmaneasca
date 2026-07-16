@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fotbal Liga 1 - Tic Tac Toe</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Liga 1: X și 0</h1>
+        <p>Găsește jucătorul comun pentru fiecare intersecție!</p>
+        <h3 id="status-joc">Rândul lui: <span id="jucator-curent" class="x-color">X</span></h3>
+    </header>
+
+    <main>
+        <div id="game-board">
+            <div class="cell header empty"></div>
+            <div class="cell header">FCSB</div>
+            <div class="cell header">Rapid</div>
+            <div class="cell header">Craiova</div>
+
+            <div class="cell header">Dinamo</div>
+            <div class="cell grid-cell" data-row="Dinamo" data-col="FCSB"></div>
+            <div class="cell grid-cell" data-row="Dinamo" data-col="Rapid"></div>
+            <div class="cell grid-cell" data-row="Dinamo" data-col="Craiova"></div>
+
+            <div class="cell header">CFR Cluj</div>
+            <div class="cell grid-cell" data-row="CFR Cluj" data-col="FCSB"></div>
+            <div class="cell grid-cell" data-row="CFR Cluj" data-col="Rapid"></div>
+            <div class="cell grid-cell" data-row="CFR Cluj" data-col="Craiova"></div>
+
+            <div class="cell header">Farul</div>
+            <div class="cell grid-cell" data-row="Farul" data-col="FCSB"></div>
+            <div class="cell grid-cell" data-row="Farul" data-col="Rapid"></div>
+            <div class="cell grid-cell" data-row="Farul" data-col="Craiova"></div>
+        </div>
+    </main>
+
+    <div id="search-modal" class="modal hidden">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 id="modal-title">Cine a jucat la X și Y?</h2>
+            <input type="text" id="player-search" placeholder="Caută jucător..." autocomplete="off">
+            <ul id="autocomplete-list"></ul>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
