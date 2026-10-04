@@ -3,174 +3,296 @@ document.addEventListener('DOMContentLoaded', () => {
     let dbJucatori = {};
     let currentPlayer = 'X';
     let activeCell = null;
+    let gameOver = false;
+    let usedPlayers = new Set();
+    let matches = [];
+    let activeIndex = -1;
 
-    // Referințe DOM
     const board = document.getElementById('game-board');
     const modal = document.getElementById('search-modal');
     const searchInput = document.getElementById('player-search');
     const autocompleteList = document.getElementById('autocomplete-list');
     const statusText = document.getElementById('jucator-curent');
+    const statusBox = document.getElementById('status-joc');
     const closeBtn = document.querySelector('.close-btn');
+    const toastEl = document.getElementById('toast');
 
-    // 1. Încărcarea datelor în noul format
+    const COMBINATII = [
+        [0, 1, 2], [3, 4, 5], [6, 7, 8],
+        [0, 3, 6], [1, 4, 7], [2, 5, 8],
+        [0, 4, 8], [2, 4, 6]
+    ];
+
+    // Ignoră diacriticele și majusculele: "Stanciu" găsește și "Ștefan"
+    const normalize = s => s.normalize('NFD').replace(/[\u0300-\u036f]/g, '').toLowerCase();
+
+    // ---------- Utilitare ----------
+    let toastTimer;
+    function toast(msg) {
+        toastEl.textContent = msg;
+        toastEl.classList.add('show');
+        clearTimeout(toastTimer);
+        toastTimer = setTimeout(() => toastEl.classList.remove('show'), 2600);
+    }
+
+    function shuffle(arr) {
+        const a = [...arr];
+        for (let i = a.length - 1; i > 0; i--) {
+            const j = Math.floor(Math.random() * (i + 1));
+            [a[i], a[j]] = [a[j], a[i]];
+        }
+        return a;
+    }
+
+    // ---------- 1. Încărcare date ----------
     fetch('jucatori.json')
-        .then(res => res.json())
+        .then(res => {
+            if (!res.ok) throw new Error(res.status);
+            return res.json();
+        })
         .then(data => {
-            dbEchipe = data.echipe.sort();
+            dbEchipe = [...data.echipe].sort((a, b) => a.localeCompare(b, 'ro'));
             dbJucatori = data.jucatori;
             construiesteGrila();
         })
-        .catch(err => console.error("Eroare la procesarea bazei de date:", err));
+        .catch(err => {
+            console.error('Eroare la încărcarea bazei de date:', err);
+            board.innerHTML = '<p style="grid-column:1/-1;padding:20px;text-align:center">' +
+                'Nu am putut încărca jucatori.json. Deschide pagina printr-un server local ' +
+                '(de ex. Live Server în VS Code), nu direct din fișier.</p>';
+        });
 
-    // 2. Construirea dinamică a grilei cu selectori de echipe
-    function construiesteGrila() {
+    // ---------- 2. Construire grilă ----------
+    function construiesteGrila(preselectate) {
         board.innerHTML = '<div class="cell header empty"></div>';
-        
-        // Creăm capetele de coloană (dropdown-uri)
-        for (let i = 0; i < 3; i++) {
-            board.appendChild(creazaSelector('col', i));
-        }
+        const alese = preselectate || dbEchipe.slice(0, 6);
 
-        // Creăm capetele de rând și celulele de joc
+        for (let i = 0; i < 3; i++) board.appendChild(creazaSelector('col', i, alese[i]));
+
         for (let r = 0; r < 3; r++) {
-            board.appendChild(creazaSelector('row', r));
+            board.appendChild(creazaSelector('row', r, alese[r + 3]));
             for (let c = 0; c < 3; c++) {
                 const cell = document.createElement('div');
                 cell.className = 'cell grid-cell';
                 cell.dataset.r = r;
                 cell.dataset.c = c;
+                cell.tabIndex = 0;
+                cell.setAttribute('role', 'button');
                 cell.addEventListener('click', () => deschideModal(cell));
+                cell.addEventListener('keydown', e => {
+                    if (e.key === 'Enter' || e.key === ' ') {
+                        e.preventDefault();
+                        deschideModal(cell);
+                    }
+                });
                 board.appendChild(cell);
             }
         }
-        actualizeazaIntersectiile();
+        actualizeazaOptiuni();
+        reseteazaJoc();
     }
 
-    // Helper pentru a genera meniurile <select>
-    function creazaSelector(tip, index) {
+    function creazaSelector(tip, index, valoare) {
         const wrapper = document.createElement('div');
         wrapper.className = 'cell header select-header';
-        
+
         const select = document.createElement('select');
         select.dataset.tip = tip;
-        
-        dbEchipe.forEach((echipa, i) => {
+        select.setAttribute('aria-label', `Echipa ${tip === 'col' ? 'coloana' : 'rândul'} ${index + 1}`);
+
+        dbEchipe.forEach(echipa => {
             const opt = document.createElement('option');
-            opt.value = echipa;
-            opt.textContent = echipa;
-            // Populăm inițial cu echipe diferite pentru a evita dublurile pe axe
-            if (tip === 'col' && i === index) opt.selected = true;
-            if (tip === 'row' && i === index + 3) opt.selected = true;
+            opt.value = opt.textContent = echipa;
+            if (echipa === valoare) opt.selected = true;
             select.appendChild(opt);
         });
 
-        // Când jucătorul schimbă echipa, reactualizăm coordonatele celulelor
-        select.addEventListener('change', actualizeazaIntersectiile);
+        select.addEventListener('change', () => {
+            actualizeazaOptiuni();
+            reseteazaJoc(); // o echipă nouă schimbă regulile, deci începem de la zero
+        });
         wrapper.appendChild(select);
         return wrapper;
     }
 
-    // 3. Maparea echipelor pe celulele de joc
-    function actualizeazaIntersectiile() {
-        const selectsRow = document.querySelectorAll('select[data-tip="row"]');
-        const selectsCol = document.querySelectorAll('select[data-tip="col"]');
-        
-        document.querySelectorAll('.grid-cell').forEach(cell => {
-            const r = cell.dataset.r;
-            const c = cell.dataset.c;
-            cell.dataset.echipa1 = selectsRow[r].value;
-            cell.dataset.echipa2 = selectsCol[c].value;
-            
-            // Golim celulele automat dacă s-a modificat un club de pe margine
-            if(cell.textContent) {
-                cell.textContent = "";
-                cell.className = 'cell grid-cell';
-            }
+    // Dezactivează în fiecare dropdown echipele deja alese în celelalte cinci
+    function actualizeazaOptiuni() {
+        const selects = [...document.querySelectorAll('.select-header select')];
+        const alese = new Set(selects.map(s => s.value));
+        selects.forEach(s => {
+            [...s.options].forEach(o => {
+                o.disabled = alese.has(o.value) && o.value !== s.value;
+            });
         });
     }
 
-    // 4. Modal & Autocomplete inteligent
+    function citesteTabla() {
+        const rows = [...document.querySelectorAll('select[data-tip="row"]')].map(s => s.value);
+        const cols = [...document.querySelectorAll('select[data-tip="col"]')].map(s => s.value);
+        return { rows, cols };
+    }
+
+    // ---------- 3. Joc nou ----------
+    function reseteazaJoc() {
+        const { rows, cols } = citesteTabla();
+        document.querySelectorAll('.grid-cell').forEach(cell => {
+            cell.className = 'cell grid-cell';
+            cell.innerHTML = '';
+            delete cell.dataset.owner;
+            cell.dataset.echipa1 = rows[cell.dataset.r];
+            cell.dataset.echipa2 = cols[cell.dataset.c];
+            cell.setAttribute('aria-label', `${rows[cell.dataset.r]} și ${cols[cell.dataset.c]}`);
+        });
+        usedPlayers.clear();
+        gameOver = false;
+        currentPlayer = 'X';
+        actualizeazaStatus();
+    }
+
+    function actualizeazaStatus() {
+        statusBox.innerHTML = `Rândul lui <span id="jucator-curent" class="${currentPlayer.toLowerCase()}-color">${currentPlayer}</span>`;
+    }
+
+    document.getElementById('btn-reset').addEventListener('click', reseteazaJoc);
+
+    document.getElementById('btn-shuffle').addEventListener('click', () => {
+        // Alege 6 echipe care au cel puțin un jucător comun pentru fiecare celulă ar fi ideal,
+        // dar aici păstrăm simplu: 6 echipe aleatoare.
+        construiesteGrila(shuffle(dbEchipe).slice(0, 6));
+    });
+
+    // ---------- 4. Modal & autocomplete ----------
     function deschideModal(cell) {
-        if (cell.textContent !== "") return;
-        
+        if (gameOver || cell.dataset.owner) return;
         activeCell = cell;
-        document.getElementById('modal-title').textContent = 
+        document.getElementById('modal-title').textContent =
             `Cine a jucat la ${cell.dataset.echipa1} și ${cell.dataset.echipa2}?`;
-        
         modal.classList.remove('hidden');
         searchInput.value = '';
-        autocompleteList.innerHTML = '';
+        randeazaSugestii();
         searchInput.focus();
     }
 
-    closeBtn.addEventListener('click', () => modal.classList.add('hidden'));
+    function inchideModal() {
+        modal.classList.add('hidden');
+        if (activeCell) activeCell.focus();
+    }
 
-    searchInput.addEventListener('input', () => {
-        const query = searchInput.value.trim().toLowerCase();
+    closeBtn.addEventListener('click', inchideModal);
+    modal.addEventListener('click', e => { if (e.target === modal) inchideModal(); });
+
+    function randeazaSugestii() {
+        const query = normalize(searchInput.value.trim());
         autocompleteList.innerHTML = '';
-        
+        matches = [];
+        activeIndex = -1;
         if (!query) return;
 
-        // Căutăm direct în cheile obiectului "jucatori"
-        const jucatoriDisponibili = Object.keys(dbJucatori);
-        const matches = jucatoriDisponibili
-            .filter(nume => nume.toLowerCase().includes(query))
-            .slice(0, 6); // Limităm la 6 sugestii pentru o interfață curată
+        matches = Object.keys(dbJucatori)
+            .filter(nume => normalize(nume).includes(query))
+            // rezultatele care încep cu textul căutat apar primele
+            .sort((a, b) => {
+                const sa = normalize(a).startsWith(query) ? 0 : 1;
+                const sb = normalize(b).startsWith(query) ? 0 : 1;
+                return sa - sb || a.localeCompare(b, 'ro');
+            })
+            .slice(0, 8);
+
+        if (!matches.length) {
+            const li = document.createElement('li');
+            li.className = 'empty';
+            li.textContent = 'Niciun jucător găsit';
+            autocompleteList.appendChild(li);
+            return;
+        }
 
         matches.forEach(nume => {
             const li = document.createElement('li');
             li.textContent = nume;
-            li.addEventListener('click', () => valideazaAlegere(nume));
+            if (usedPlayers.has(nume)) {
+                li.classList.add('used');
+                li.title = 'Jucător deja folosit';
+            } else {
+                li.addEventListener('click', () => valideazaAlegere(nume));
+            }
             autocompleteList.appendChild(li);
         });
+    }
+
+    function seteazaActiv(i) {
+        const items = autocompleteList.querySelectorAll('li');
+        if (!items.length || !matches.length) return;
+        activeIndex = (i + items.length) % items.length;
+        items.forEach((li, idx) => li.classList.toggle('active', idx === activeIndex));
+        items[activeIndex].scrollIntoView({ block: 'nearest' });
+    }
+
+    searchInput.addEventListener('input', randeazaSugestii);
+
+    searchInput.addEventListener('keydown', e => {
+        if (e.key === 'ArrowDown') { e.preventDefault(); seteazaActiv(activeIndex + 1); }
+        else if (e.key === 'ArrowUp') { e.preventDefault(); seteazaActiv(activeIndex - 1); }
+        else if (e.key === 'Enter') {
+            const nume = matches[activeIndex >= 0 ? activeIndex : 0];
+            if (nume && !usedPlayers.has(nume)) valideazaAlegere(nume);
+        }
     });
 
-    // 5. Noul sistem de validare ML/Graph-based
+    document.addEventListener('keydown', e => {
+        if (e.key === 'Escape' && !modal.classList.contains('hidden')) inchideModal();
+    });
+
+    // ---------- 5. Validare ----------
     function valideazaAlegere(playerName) {
         const club1 = activeCell.dataset.echipa1;
         const club2 = activeCell.dataset.echipa2;
-        const istoricCluburi = dbJucatori[playerName] || [];
+        const istoric = dbJucatori[playerName] || [];
+        const cell = activeCell;
 
-        // Condiția principală: jucătorul trebuie să aibă ambele cluburi în array-ul carierei sale
-        if (istoricCluburi.includes(club1) && istoricCluburi.includes(club2)) {
-            activeCell.textContent = currentPlayer;
-            activeCell.classList.add('filled', `${currentPlayer.toLowerCase()}-color`);
-            
-            // Trecem la următorul jucător
-            currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
-            statusText.textContent = currentPlayer;
-            statusText.className = `${currentPlayer.toLowerCase()}-color`;
-            
-            verificaCastig();
-        } else {
-            alert(`Eroare de istoric! ${playerName} nu a evoluat la ambele cluburi.`);
-        }
-        
         modal.classList.add('hidden');
+
+        if (istoric.includes(club1) && istoric.includes(club2)) {
+            cell.dataset.owner = currentPlayer;
+            cell.classList.add('filled', `${currentPlayer.toLowerCase()}-color`);
+            cell.innerHTML = `<span>${currentPlayer}</span><span class="who"></span>`;
+            cell.querySelector('.who').textContent = playerName;
+            usedPlayers.add(playerName);
+
+            if (!verificaFinal()) {
+                currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
+                actualizeazaStatus();
+            }
+        } else {
+            toast(`${playerName} nu a jucat la ${club1} și la ${club2}.`);
+            cell.classList.remove('shake');
+            void cell.offsetWidth; // repornește animația
+            cell.classList.add('shake');
+            cell.focus();
+        }
     }
 
-    // 6. Motorul pentru condiția de victorie
-    function verificaCastig() {
-        const cells = Array.from(document.querySelectorAll('.grid-cell'));
-        if (cells.length < 9) return;
-        
-        const combinatii = [
-            [0, 1, 2], [3, 4, 5], [6, 7, 8], // Orizontale
-            [0, 3, 6], [1, 4, 7], [2, 5, 8], // Verticale
-            [0, 4, 8], [2, 4, 6]             // Diagonale
-        ];
+    // ---------- 6. Victorie sau remiză ----------
+    function verificaFinal() {
+        const cells = [...document.querySelectorAll('.grid-cell')];
+        const owner = i => cells[i].dataset.owner;
 
-        for (const [a, b, c] of combinatii) {
-            if (cells[a].textContent && 
-                cells[a].textContent === cells[b].textContent && 
-                cells[a].textContent === cells[c].textContent) {
-                
-                setTimeout(() => {
-                    alert(`Joc încheiat! Câștigător: ${cells[a].textContent}`);
-                    // Poți apela o funcție de reset aici
-                }, 100);
-                return;
+        for (const [a, b, c] of COMBINATII) {
+            if (owner(a) && owner(a) === owner(b) && owner(a) === owner(c)) {
+                [a, b, c].forEach(i => cells[i].classList.add('win'));
+                gameOver = true;
+                const castigator = owner(a);
+                statusBox.innerHTML = `<span class="${castigator.toLowerCase()}-color">${castigator}</span> a câștigat!`;
+                toast(`Felicitări, ${castigator}! Apasă „Joc nou” pentru o altă rundă.`);
+                return true;
             }
         }
+
+        if (cells.every(c => c.dataset.owner)) {
+            gameOver = true;
+            statusBox.textContent = 'Remiză';
+            toast('Remiză. Apasă „Joc nou” ca să încerci din nou.');
+            return true;
+        }
+        return false;
     }
 });
