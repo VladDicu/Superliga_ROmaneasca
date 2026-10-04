@@ -3,43 +3,35 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Fotbal Liga 1 - Tic Tac Toe</title>
+    <title>Liga 1: X și 0</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
         <h1>Liga 1: X și 0</h1>
-        <p>Găsește jucătorul comun pentru fiecare intersecție!</p>
-        <h3 id="status-joc">Rândul lui: <span id="jucator-curent" class="x-color">X</span></h3>
+        <p>Găsește jucătorul care a evoluat la ambele cluburi.</p>
+        <div id="status-joc" class="status" aria-live="polite">
+            Rândul lui <span id="jucator-curent" class="x-color">X</span>
+        </div>
     </header>
 
     <main>
-        <div id="game-board">
-            <div class="cell header empty"></div>
-            <div class="cell header">FCSB</div>
-            <div class="cell header">Rapid</div>
-            <div class="cell header">Craiova</div>
-
-            <div class="cell header">Dinamo</div>
-            <div class="cell grid-cell" data-row="Dinamo" data-col="FCSB"></div>
-            <div class="cell grid-cell" data-row="Dinamo" data-col="Rapid"></div>
-            <div class="cell grid-cell" data-row="Dinamo" data-col="Craiova"></div>
-
-            <div class="cell header">CFR Cluj</div>
-            <div class="cell grid-cell" data-row="CFR Cluj" data-col="FCSB"></div>
-            <div class="cell grid-cell" data-row="CFR Cluj" data-col="Rapid"></div>
-            <div class="cell grid-cell" data-row="CFR Cluj" data-col="Craiova"></div>
-
-            <div class="cell header">Farul</div>
-            <div class="cell grid-cell" data-row="Farul" data-col="FCSB"></div>
-            <div class="cell grid-cell" data-row="Farul" data-col="Rapid"></div>
-            <div class="cell grid-cell" data-row="Farul" data-col="Craiova"></div>
+        <!-- Tabla este construită din script.js -->
+        <div id="game-board" aria-label="Tabla de joc"></div>
+        <div class="actions">
+            <button id="btn-reset" class="btn" type="button">Joc nou</button>
+            <button id="btn-shuffle" class="btn btn-ghost" type="button">Alege echipe la întâmplare</button>
         </div>
     </main>
 
-    <div id="search-modal" class="modal hidden">
+    <div id="toast" class="toast" role="status" aria-live="polite"></div>
+
+    <div id="search-modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modal-title">
         <div class="modal-content">
-            <span class="close-btn">&times;</span>
+            <button class="close-btn" type="button" aria-label="Închide">&times;</button>
             <h2 id="modal-title">Cine a jucat la X și Y?</h2>
             <input type="text" id="player-search" placeholder="Caută jucător..." autocomplete="off">
             <ul id="autocomplete-list"></ul>
