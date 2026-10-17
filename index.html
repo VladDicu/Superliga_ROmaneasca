@@ -3,37 +3,32 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liga 1: X și 0</title>
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+    <title>SuperLiga & Liga 2 - Footy Tic-Tac-Toe</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Liga 1: X și 0</h1>
-        <p>Găsește jucătorul care a evoluat la ambele cluburi.</p>
-        <div id="status-joc" class="status" aria-live="polite">
-            Rândul lui <span id="jucator-curent" class="x-color">X</span>
+        <h1>Fotbal Românesc: X și 0</h1>
+        <p>Găsește fotbalistul care îndeplinește simultan criteriul de pe linie și cel de pe coloană!</p>
+        <div class="controls-bar">
+            <span id="status-joc">Rândul lui: <strong id="jucator-curent" class="x-color">X</strong></span>
+            <button id="btn-random" class="btn">🎲 Generează Grilă Validă</button>
+            <button id="btn-reset" class="btn secondary">🔄 Resetează Tabla</button>
         </div>
     </header>
 
     <main>
-        <!-- Tabla este construită din script.js -->
-        <div id="game-board" aria-label="Tabla de joc"></div>
-        <div class="actions">
-            <button id="btn-reset" class="btn" type="button">Joc nou</button>
-            <button id="btn-shuffle" class="btn btn-ghost" type="button">Alege echipe la întâmplare</button>
-        </div>
+        <!-- Tabla de joc generată dinamic din JS -->
+        <div id="game-board"></div>
     </main>
 
-    <div id="toast" class="toast" role="status" aria-live="polite"></div>
-
-    <div id="search-modal" class="modal hidden" role="dialog" aria-modal="true" aria-labelledby="modal-title">
+    <!-- Fereastra Modală pentru căutarea jucătorului -->
+    <div id="search-modal" class="modal hidden">
         <div class="modal-content">
-            <button class="close-btn" type="button" aria-label="Închide">&times;</button>
-            <h2 id="modal-title">Cine a jucat la X și Y?</h2>
-            <input type="text" id="player-search" placeholder="Caută jucător..." autocomplete="off">
+            <span class="close-btn">&times;</span>
+            <h3 id="modal-title">Caută jucător</h3>
+            <p id="modal-subtitle" class="subtitle"></p>
+            <input type="text" id="player-search" placeholder="Tastează numele jucătorului..." autocomplete="off">
             <ul id="autocomplete-list"></ul>
         </div>
     </div>
