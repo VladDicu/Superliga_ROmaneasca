@@ -3,32 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>SuperLiga & Liga 2 - Footy Tic-Tac-Toe</title>
+    <title>Liga 1 Arcade - Footy Tic-Tac-Toe</title>
+    <!-- Font Pixel Art clasic -->
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <header>
-        <h1>Fotbal Românesc: X și 0</h1>
-        <p>Găsește fotbalistul care îndeplinește simultan criteriul de pe linie și cel de pe coloană!</p>
+        <h1>⚽ LIGA 1 PIXEL GRID</h1>
+        <p class="subtitle-arcade">GĂSEȘTE JUCĂTORUL COMUN PENTRU INTERSECȚIE</p>
         <div class="controls-bar">
-            <span id="status-joc">Rândul lui: <strong id="jucator-curent" class="x-color">X</strong></span>
-            <button id="btn-random" class="btn">🎲 Generează Grilă Validă</button>
-            <button id="btn-reset" class="btn secondary">🔄 Resetează Tabla</button>
+            <span id="status-joc">TURĂ: <strong id="jucator-curent" class="x-color">X</strong></span>
+            <button id="btn-random" class="btn-pixel">🎲 GRILĂ NOUĂ</button>
+            <button id="btn-reset" class="btn-pixel secondary">🔄 RESET</button>
         </div>
     </header>
 
     <main>
-        <!-- Tabla de joc generată dinamic din JS -->
         <div id="game-board"></div>
     </main>
 
-    <!-- Fereastra Modală pentru căutarea jucătorului -->
+    <!-- Fereastra Modală Retro -->
     <div id="search-modal" class="modal hidden">
         <div class="modal-content">
-            <span class="close-btn">&times;</span>
-            <h3 id="modal-title">Caută jucător</h3>
+            <span class="close-btn">[X]</span>
+            <h3 id="modal-title">CAUTĂ JUCĂTOR</h3>
             <p id="modal-subtitle" class="subtitle"></p>
-            <input type="text" id="player-search" placeholder="Tastează numele jucătorului..." autocomplete="off">
+            <input type="text" id="player-search" placeholder="SCRIE NUMELE..." autocomplete="off">
             <ul id="autocomplete-list"></ul>
         </div>
     </div>
