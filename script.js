@@ -1,6 +1,7 @@
 document.addEventListener('DOMContentLoaded', () => {
     let dbCategorii = {};
-    let dbJucatori = {}; // Nume -> Set cu toate tag-urile jucătorului
+    let dbJucatori = {};
+    let mapCategorieOptiune = {}; // Memorează dacă o opțiune e Club, Antrenor sau Trofeu
     let listaNumeJucatori = [];
     let usedPlayers = new Set();
     let currentPlayer = 'X';
@@ -17,17 +18,105 @@ document.addEventListener('DOMContentLoaded', () => {
     const btnRandom = document.getElementById('btn-random');
     const btnReset = document.getElementById('btn-reset');
 
-    // Funcție care elimină diacriticele pentru o căutare prietenoasă
     const normalizeText = (str) => str.normalize("NFD").replace(/[\u0300-\u036f]/g, "").toLowerCase();
 
-    // 1. Încărcăm jucatori.json
+    // Culorile oficiale pentru tricourile echipelor și naționalei
+    const CULORI_TRICOURI = {
+        "FCSB": ["#dc2626", "#1d4ed8"],
+        "Dinamo București": ["#dc2626", "#ffffff"],
+        "Rapid București": ["#7f1d1d", "#ffffff"],
+        "CFR Cluj": ["#7f1d1d", "#ffffff"],
+        "Universitatea Craiova": ["#1d4ed8", "#ffffff"],
+        "Farul Constanța": ["#1e3a8a", "#ffffff"],
+        "U Cluj": ["#ffffff", "#000000"],
+        "Petrolul Ploiești": ["#facc15", "#1d4ed8"],
+        "Oțelul Galați": ["#dc2626", "#1e3a8a"],
+        "Sepsi OSK": ["#dc2626", "#ffffff"],
+        "UTA Arad": ["#dc2626", "#ffffff"],
+        "FC Botoșani": ["#dc2626", "#1e3a8a"],
+        "Hermannstadt": ["#dc2626", "#000000"],
+        "Poli Iași": ["#1d4ed8", "#ffffff"],
+        "Poli Timișoara": ["#7e22ce", "#ffffff"],
+        "FC Vaslui": ["#facc15", "#15803d"],
+        "Unirea Urziceni": ["#1d4ed8", "#ffffff"],
+        "Astra Giurgiu": ["#ffffff", "#000000"],
+        "Gaz Metan Mediaș": ["#000000", "#ffffff"],
+        "FC Argeș": ["#7e22ce", "#ffffff"],
+        "România (Naționala Mare)": ["#facc15", "#1d4ed8"],
+        "România U21": ["#facc15", "#dc2626"]
+    };
+
+    // ==================== GENERATOR PIXEL ART (SVG 8-BIT) ====================
+
+    // 1. Tricou Pixelat (pentru Cluburi & Echipa Națională)
+    function svgTricou(numeClub) {
+        let [c1, c2] = CULORI_TRICOURI[numeClub] || ["#10b981", "#ffffff"];
+        return `
+        <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges">
+            <path d="M4 2h3v2h2V2h3l3 3v3h-3v6H4V8H1V5z" fill="${c1}" />
+            <rect x="6" y="4" width="4" height="10" fill="${c2}" />
+            <rect x="1" y="5" width="3" height="3" fill="${c2}" />
+            <rect x="12" y="5" width="3" height="3" fill="${c2}" />
+        </svg>`;
+    }
+
+    // 2. Trofeu Pixelat (pentru Competiții, Ligi & Cupe)
+    function svgTrofeu() {
+        return `
+        <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges">
+            <rect x="4" y="2" width="8" height="6" fill="#facc15" />
+            <rect x="2" y="3" width="2" height="3" fill="#eab308" />
+            <rect x="12" y="3" width="2" height="3" fill="#eab308" />
+            <rect x="6" y="8" width="4" height="3" fill="#eab308" />
+            <rect x="4" y="11" width="8" height="2" fill="#facc15" />
+            <rect x="3" y="13" width="10" height="2" fill="#78350f" />
+        </svg>`;
+    }
+
+    // 3. Caracter Masculin Pătrățos (pentru Antrenori și Jucători)
+    function svgCaracterMasculin(esteAntrenor = false, culoareTricou = "#ef4444") {
+        const culoareHaina = esteAntrenor ? "#1e293b" : culoareTricou; // Costum închis la antrenor
+        const cravata = esteAntrenor ? `<rect x="7" y="11" width="2" height="4" fill="#ef4444" />` : '';
+        return `
+        <svg viewBox="0 0 16 16" xmlns="http://www.w3.org/2000/svg" shape-rendering="crispEdges">
+            <!-- Păr pătrățos -->
+            <rect x="4" y="1" width="8" height="3" fill="#451a03" />
+            <!-- Față pătrățoasă -->
+            <rect x="4" y="4" width="8" height="6" fill="#fcd34d" />
+            <!-- Ochi -->
+            <rect x="5" y="6" width="2" height="2" fill="#000000" />
+            <rect x="9" y="6" width="2" height="2" fill="#000000" />
+            <!-- Mustață / Gură -->
+            <rect x="6" y="8" width="4" height="1" fill="#78350f" />
+            <!-- Umeri / Tricou sau Costum -->
+            <rect x="2" y="10" width="12" height="6" fill="${culoareHaina}" />
+            <rect x="6" y="10" width="4" height="2" fill="#ffffff" />
+            ${cravata}
+        </svg>`;
+    }
+
+    // Returnează iconița potrivită în funcție de categorie
+    function getIconitaPentruCriteriu(optiune) {
+        const cat = mapCategorieOptiune[optiune] || "";
+        if (optiune === "România (Naționala Mare)" || optiune === "România U21" || cat.includes("Cluburi")) {
+            return svgTricou(optiune);
+        }
+        if (cat.includes("Antrenori")) {
+            return svgCaracterMasculin(true);
+        }
+        return svgTrofeu();
+    }
+
+    // ==================== LOGICA DE JOC ====================
+
     fetch('jucatori.json')
-        .then(res => {
-            if (!res.ok) throw new Error("Nu am găsit jucatori.json! Pornește cu Live Server.");
-            return res.json();
-        })
+        .then(res => res.json())
         .then(data => {
             dbCategorii = data.categorii;
+
+            for (const [cat, lista] of Object.entries(dbCategorii)) {
+                lista.forEach(opt => { mapCategorieOptiune[opt] = cat; });
+            }
 
             for (const [nume, profil] of Object.entries(data.jucatori)) {
                 const toateTagurile = [
@@ -41,13 +130,12 @@ document.addEventListener('DOMContentLoaded', () => {
 
             listaNumeJucatori = Object.keys(dbJucatori).sort();
             construiesteGrila();
-            genereazaGrilaValida(); // Pornim direct cu o grilă 100% rezolvabilă
+            genereazaGrilaValida();
         })
-        .catch(err => console.error("Eroare DB:", err));
+        .catch(err => console.error("Eroare la citirea jucatori.json:", err));
 
-    // 2. Construirea grilei 4x4
     function construiesteGrila() {
-        board.innerHTML = '<div class="cell header empty">⚽</div>';
+        board.innerHTML = '<div class="cell header empty">LIGA 1<br>ARCADE</div>';
 
         for (let c = 0; c < 3; c++) {
             board.appendChild(creazaSelector('col', c));
@@ -70,6 +158,9 @@ document.addEventListener('DOMContentLoaded', () => {
         const wrapper = document.createElement('div');
         wrapper.className = 'cell header select-header';
 
+        const iconBox = document.createElement('div');
+        iconBox.className = 'pixel-icon-box';
+
         const select = document.createElement('select');
         select.dataset.tip = tip;
         select.dataset.index = index;
@@ -77,7 +168,7 @@ document.addEventListener('DOMContentLoaded', () => {
         for (const [numeCat, optiuni] of Object.entries(dbCategorii)) {
             if (!optiuni || optiuni.length === 0) continue;
             const optgroup = document.createElement('optgroup');
-            optgroup.label = `── ${numeCat} ──`;
+            optgroup.label = `=== ${numeCat.toUpperCase()} ===`;
 
             optiuni.forEach(optiune => {
                 const opt = document.createElement('option');
@@ -88,28 +179,36 @@ document.addEventListener('DOMContentLoaded', () => {
             select.appendChild(optgroup);
         }
 
-        select.addEventListener('change', actualizeazaIntersectiile);
+        select.addEventListener('change', () => {
+            iconBox.innerHTML = getIconitaPentruCriteriu(select.value);
+            actualizeazaIntersectiile();
+        });
+
+        wrapper.appendChild(iconBox);
         wrapper.appendChild(select);
         return wrapper;
     }
 
-    // 3. Calculăm câți jucători corespund fiecărei intersecții
-    function numaraSolutii(criteriu1, criteriu2) {
-        if (criteriu1 === criteriu2) return 0;
+    function numaraSolutii(c1, c2) {
+        if (c1 === c2) return 0;
         let count = 0;
         for (const tagSet of Object.values(dbJucatori)) {
-            if (tagSet.has(criteriu1) && tagSet.has(criteriu2)) {
-                count++;
-            }
+            if (tagSet.has(c1) && tagSet.has(c2)) count++;
         }
         return count;
     }
 
-    // 4. Actualizarea intersecțiilor când se schimbă un dropdown
     function actualizeazaIntersectiile() {
         const selectsRow = document.querySelectorAll('select[data-tip="row"]');
         const selectsCol = document.querySelectorAll('select[data-tip="col"]');
         usedPlayers.clear();
+
+        // Actualizăm iconițele Pixel Art din toate antetele
+        document.querySelectorAll('.select-header').forEach(header => {
+            const sel = header.querySelector('select');
+            const box = header.querySelector('.pixel-icon-box');
+            if (sel && box) box.innerHTML = getIconitaPentruCriteriu(sel.value);
+        });
 
         document.querySelectorAll('.grid-cell').forEach(cell => {
             const r = cell.dataset.r;
@@ -123,7 +222,7 @@ document.addEventListener('DOMContentLoaded', () => {
 
             const nrSolutii = numaraSolutii(c1, c2);
             cell.dataset.solutii = nrSolutii;
-            cell.innerHTML = `<span class="possible-count ${nrSolutii === 0 ? 'zero' : ''}">${nrSolutii} sol.</span>`;
+            cell.innerHTML = `<span class="possible-count ${nrSolutii === 0 ? 'zero' : ''}">${nrSolutii} SOL.</span>`;
         });
 
         currentPlayer = 'X';
@@ -131,39 +230,32 @@ document.addEventListener('DOMContentLoaded', () => {
         statusText.className = 'x-color';
     }
 
-    // 5. Generator inteligent de grilă fără căsuțe imposibile (0 soluții)
     function genereazaGrilaValida() {
         const toateOptiunile = Object.values(dbCategorii).flat();
-        if (toateOptiunile.length < 6) return;
-
-        // Filtru: luăm doar opțiunile care au suficienți jucători în DB
         const optiuniBogate = toateOptiunile.filter(opt => {
             let aparitii = 0;
             for (const set of Object.values(dbJucatori)) {
                 if (set.has(opt)) aparitii++;
             }
-            return aparitii >= 8;
+            return aparitii >= 12;
         });
 
         const pool = optiuniBogate.length >= 6 ? optiuniBogate : toateOptiunile;
 
-        for (let incercare = 0; incercare < 200; incercare++) {
+        for (let incercare = 0; incercare < 250; incercare++) {
             const amestecate = [...pool].sort(() => 0.5 - Math.random());
             const rows = amestecate.slice(0, 3);
             const cols = amestecate.slice(3, 6);
 
-            let grilaValida = true;
+            let ok = true;
             for (const r of rows) {
                 for (const c of cols) {
-                    if (numaraSolutii(r, c) === 0) {
-                        grilaValida = false;
-                        break;
-                    }
+                    if (numaraSolutii(r, c) === 0) { ok = false; break; }
                 }
-                if (!grilaValida) break;
+                if (!ok) break;
             }
 
-            if (grilaValida) {
+            if (ok) {
                 const selectsRow = document.querySelectorAll('select[data-tip="row"]');
                 const selectsCol = document.querySelectorAll('select[data-tip="col"]');
                 rows.forEach((val, idx) => selectsRow[idx].value = val);
@@ -178,17 +270,11 @@ document.addEventListener('DOMContentLoaded', () => {
     btnRandom.addEventListener('click', genereazaGrilaValida);
     btnReset.addEventListener('click', actualizeazaIntersectiile);
 
-    // 6. Deschidere Modal & Căutare fără diacritice
     function deschideModal(cell) {
         if (cell.classList.contains('filled')) return;
-
         activeCell = cell;
-        const c1 = cell.dataset.echipa1;
-        const c2 = cell.dataset.echipa2;
-        const sol = cell.dataset.solutii;
-
-        modalTitle.textContent = `${c1} × ${c2}`;
-        modalSubtitle.textContent = `${sol} jucători posibili în baza de date`;
+        modalTitle.textContent = `${cell.dataset.echipa1} × ${cell.dataset.echipa2}`;
+        modalSubtitle.textContent = `${cell.dataset.solutii} JUCĂTORI DISPONIBILI`;
         modal.classList.remove('hidden');
         searchInput.value = '';
         autocompleteList.innerHTML = '';
@@ -209,13 +295,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
         matches.forEach(nume => {
             const li = document.createElement('li');
-            li.textContent = nume;
+            li.innerHTML = `
+                <div class="mini-avatar">${svgCaracterMasculin(false, "#10b981")}</div>
+                <span>${nume}</span>
+            `;
             li.addEventListener('click', () => valideazaAlegere(nume));
             autocompleteList.appendChild(li);
         });
     });
 
-    // 7. Validarea alegerii
     function valideazaAlegere(playerName) {
         if (!activeCell) return;
 
@@ -225,11 +313,15 @@ document.addEventListener('DOMContentLoaded', () => {
 
         if (taguri && taguri.has(c1) && taguri.has(c2)) {
             usedPlayers.add(playerName);
+            const culoareEchipament = currentPlayer === 'X' ? '#ef4444' : '#3b82f6';
+
             activeCell.innerHTML = `
-                <div class="winner-mark ${currentPlayer.toLowerCase()}-color">${currentPlayer}</div>
+                <div class="winner-badge ${currentPlayer.toLowerCase()}-color">${currentPlayer}</div>
+                <div class="pixel-icon-box">${svgCaracterMasculin(false, culoareEchipament)}</div>
                 <div class="player-name-tag" title="${playerName}">${playerName}</div>
             `;
             activeCell.classList.add('filled');
+            activeCell.dataset.winner = currentPlayer;
 
             currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
             statusText.textContent = currentPlayer;
@@ -238,7 +330,7 @@ document.addEventListener('DOMContentLoaded', () => {
             modal.classList.add('hidden');
             verificaCastig();
         } else {
-            alert(`Greșit! ${playerName} nu are simultan în palmares "${c1}" și "${c2}". Rândul trece la adversar!`);
+            alert(`GREȘIT! ${playerName} nu corespunde. Tura trece la adversar!`);
             currentPlayer = currentPlayer === 'X' ? 'O' : 'X';
             statusText.textContent = currentPlayer;
             statusText.className = `${currentPlayer.toLowerCase()}-color`;
@@ -246,13 +338,9 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     }
 
-    // 8. Verificare câștigător
     function verificaCastig() {
         const cells = Array.from(document.querySelectorAll('.grid-cell'));
-        const getMark = (cell) => {
-            const mark = cell.querySelector('.winner-mark');
-            return mark ? mark.textContent : '';
-        };
+        const getMark = (cell) => cell.dataset.winner || '';
 
         const linii = [
             [0, 1, 2], [3, 4, 5], [6, 7, 8],
@@ -263,13 +351,9 @@ document.addEventListener('DOMContentLoaded', () => {
         for (const [a, b, c] of linii) {
             const mA = getMark(cells[a]);
             if (mA && mA === getMark(cells[b]) && mA === getMark(cells[c])) {
-                setTimeout(() => alert(`Victorie pentru jucătorul ${mA}!`), 150);
+                setTimeout(() => alert(`🏆 VICTORIE PENTRU JUCĂTORUL ${mA}!`), 150);
                 return;
             }
-        }
-
-        if (cells.every(cell => cell.classList.contains('filled'))) {
-            setTimeout(() => alert("Remiză! Toate căsuțele au fost completate."), 150);
         }
     }
 });
