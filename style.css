@@ -1,117 +1,207 @@
 :root {
-    --bg-pitch: #14532d;
-    --bg-grid: #052e16;
-    --card-bg: #1e293b;
-    --header-bg: #0f172a;
-    --cell-bg: #f8fafc;
-    --cell-hover: #fde047;
-    --border-black: #000000;
-    --x-color: #ef4444;
-    --o-color: #3b82f6;
+    --grass-1: #15803d;
+    --grass-2: #166534;
+    --line-white: rgba(255, 255, 255, 0.35);
+    --board-frame: #1e293b;
+    --header-cell: #0f172a;
+    --play-cell: #f8fafc;
+    --play-hover: #fef08a;
     --gold: #facc15;
+    --x-red: #ef4444;
+    --o-blue: #3b82f6;
 }
 
 * {
     box-sizing: border-box;
-    border-radius: 0 !important; /* Strict pătrățos */
+    border-radius: 0 !important;
     image-rendering: pixelated;
 }
 
 body {
-    font-family: 'VT323', monospace;
-    background-color: var(--bg-pitch);
-    background-image: 
-        linear-gradient(45deg, #166534 25%, transparent 25%), 
-        linear-gradient(-45deg, #166534 25%, transparent 25%), 
-        linear-gradient(45deg, transparent 75%, #166534 75%), 
-        linear-gradient(-45deg, transparent 75%, #166534 75%);
-    background-size: 40px 40px;
-    color: #fff;
     margin: 0;
-    padding: 20px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-header {
-    text-align: center;
-    max-width: 720px;
-    width: 100%;
-}
-
-header h1 {
-    font-family: 'Press Start 2P', monospace;
-    font-size: 1.5rem;
-    color: var(--gold);
-    text-shadow: 4px 4px 0px #000;
-    margin-bottom: 8px;
-}
-
-.subtitle-arcade {
-    font-size: 1.3rem;
-    letter-spacing: 1px;
-    background: #000;
-    display: inline-block;
-    padding: 4px 12px;
-    margin-top: 0;
-}
-
-.controls-bar {
+    padding: 0;
+    min-height: 100vh;
+    font-family: 'VT323', monospace;
+    background-color: var(--grass-1);
+    color: #fff;
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 16px;
-    margin: 15px 0;
-    background: var(--card-bg);
-    padding: 12px 20px;
-    border: 4px solid var(--border-black);
-    box-shadow: 6px 6px 0px var(--border-black);
+    overflow-x: hidden;
+    position: relative;
+}
+
+/* ==================== TERENUL DE FOTBAL PIXELAT (BACKGROUND) ==================== */
+.pitch-background {
+    position: fixed;
+    inset: 0;
+    z-index: 0;
+    /* Dungi de gazon + textură de pixeli 8-bit */
+    background-image: 
+        radial-gradient(rgba(0, 0, 0, 0.12) 2px, transparent 0),
+        repeating-linear-gradient(
+            0deg,
+            var(--grass-1) 0px,
+            var(--grass-1) 64px,
+            var(--grass-2) 64px,
+            var(--grass-2) 128px
+        );
+    background-size: 8px 8px, 100% 128px;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    pointer-events: none;
+}
+
+.pitch-border {
+    width: 96%;
+    height: 94%;
+    border: 6px solid var(--line-white);
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.center-line {
+    position: absolute;
+    width: 100%;
+    height: 6px;
+    background: var(--line-white);
+}
+
+.center-circle {
+    width: 180px;
+    height: 180px;
+    border: 6px solid var(--line-white);
+}
+
+.center-spot {
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    background: var(--line-white);
+}
+
+.penalty-box {
+    position: absolute;
+    width: 340px;
+    height: 90px;
+    border: 6px solid var(--line-white);
+}
+
+.penalty-box.top {
+    top: -6px;
+}
+
+.penalty-box.bottom {
+    bottom: -6px;
+}
+
+/* ==================== ÎNCADRAREA PRINCIPALĂ ÎN PAGINĂ ==================== */
+.app-wrapper {
+    position: relative;
+    z-index: 2;
+    width: 100%;
+    max-width: 760px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+header {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}
+
+.title-banner {
+    background: #000;
+    border: 4px solid #fff;
+    box-shadow: 6px 6px 0px #000;
+    padding: 8px 20px;
+}
+
+.title-banner h1 {
     font-family: 'Press Start 2P', monospace;
-    font-size: 0.75rem;
+    font-size: 1.25rem;
+    color: var(--gold);
+    margin: 0;
+    text-shadow: 3px 3px 0 #b91c1c;
+    letter-spacing: 1px;
+}
+
+.controls-bar {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: var(--board-frame);
+    border: 4px solid #000;
+    box-shadow: 6px 6px 0px #000;
+    padding: 8px 14px;
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.72rem;
+}
+
+.action-buttons {
+    display: flex;
+    gap: 10px;
 }
 
 .btn-pixel {
     font-family: 'Press Start 2P', monospace;
-    font-size: 0.7rem;
-    background-color: var(--gold);
+    font-size: 0.62rem;
+    background: var(--gold);
     color: #000;
-    border: 4px solid #000;
-    padding: 10px 12px;
+    border: 3px solid #000;
+    padding: 8px 10px;
     cursor: pointer;
     box-shadow: 4px 4px 0px #000;
-    transition: transform 0.05s;
 }
 
 .btn-pixel.secondary {
-    background-color: #94a3b8;
+    background: #cbd5e1;
+}
+
+.btn-pixel:hover {
+    background: #fde047;
 }
 
 .btn-pixel:active {
-    transform: translate(3px, 3px);
-    box-shadow: 1px 1px 0px #000;
+    transform: translate(2px, 2px);
+    box-shadow: 2px 2px 0px #000;
 }
 
-.x-color { color: var(--x-color); text-shadow: 2px 2px 0 #000; }
-.o-color { color: var(--o-color); text-shadow: 2px 2px 0 #000; }
+.x-color { color: var(--x-red); text-shadow: 2px 2px 0 #000; }
+.o-color { color: var(--o-blue); text-shadow: 2px 2px 0 #000; }
 
-/* Tabla de joc pătrățoasă */
+/* ==================== GRILA DE JOC PĂTRĂȚOASĂ ==================== */
+main {
+    width: 100%;
+}
+
 #game-board {
     display: grid;
-    grid-template-columns: 165px repeat(3, 150px);
-    grid-template-rows: 135px repeat(3, 140px);
-    gap: 10px;
-    background-color: var(--bg-grid);
-    padding: 14px;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 132px repeat(3, 128px);
+    gap: 8px;
+    background: #090d16;
+    padding: 10px;
     border: 6px solid #000;
-    box-shadow: 10px 10px 0px #000;
+    box-shadow: 10px 10px 0px rgba(0, 0, 0, 0.85);
 }
 
 .cell {
-    background-color: var(--cell-bg);
+    background: var(--play-cell);
     color: #000;
     border: 4px solid #000;
-    box-shadow: inset -4px -4px 0px #cbd5e1;
+    box-shadow: inset -4px -4px 0px #cbd5e1, inset 4px 4px 0px #ffffff;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -123,29 +213,40 @@ header h1 {
 }
 
 .cell.header {
-    background-color: var(--header-bg);
+    background: var(--header-cell);
     color: #fff;
-    box-shadow: inset -4px -4px 0px #1e293b;
+    box-shadow: inset -4px -4px 0px #020617, inset 4px 4px 0px #334155;
     justify-content: space-between;
-    padding: 8px 4px;
+    padding: 6px;
 }
 
 .cell.header.empty {
-    background-color: #000;
-    color: var(--gold);
-    font-family: 'Press Start 2P', monospace;
-    font-size: 0.75rem;
+    background: #000;
     justify-content: center;
+    gap: 4px;
 }
 
-/* Container pentru iconița Pixel Art (Tricou / Antrenor / Trofeu) */
+.badge-categorie {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 0.45rem;
+    padding: 3px 5px;
+    border: 2px solid #000;
+    color: #000;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.cat-club { background: #4ade80; }
+.cat-antrenor { background: #38bdf8; }
+.cat-trofeu { background: #facc15; }
+.cat-comp { background: #c084fc; }
+
 .pixel-icon-box {
-    width: 52px;
-    height: 52px;
+    width: 54px;
+    height: 54px;
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-bottom: 4px;
 }
 
 .pixel-icon-box svg {
@@ -156,13 +257,13 @@ header h1 {
 
 .select-header select {
     font-family: 'VT323', monospace;
-    background-color: #000;
-    color: var(--gold);
-    border: 2px solid #475569;
-    padding: 3px;
+    background: #000;
+    color: #fff;
+    border: 2px solid var(--gold);
+    padding: 2px 4px;
     font-size: 1.05rem;
+    width: 100%;
     text-align: center;
-    width: 96%;
     cursor: pointer;
     outline: none;
 }
@@ -172,26 +273,32 @@ header h1 {
 }
 
 .grid-cell:hover {
-    background-color: var(--cell-hover);
+    background: var(--play-hover);
 }
 
 .possible-count {
     position: absolute;
     bottom: 4px;
     right: 6px;
-    font-size: 1rem;
-    color: #475569;
+    font-size: 1.05rem;
     font-weight: bold;
+    color: #334155;
+    background: #e2e8f0;
+    padding: 0 4px;
+    border: 2px solid #000;
 }
 
-.possible-count.zero { color: var(--x-color); }
-
-/* Celulă câștigată cu avatarul jucătorului */
-.grid-cell.filled {
-    background-color: #1e293b;
+.possible-count.zero {
+    background: var(--x-red);
     color: #fff;
-    box-shadow: inset -4px -4px 0px #0f172a;
-    cursor: not-allowed;
+}
+
+/* Celulă câștigată */
+.grid-cell.filled {
+    background: #1e293b;
+    color: #fff;
+    box-shadow: inset -4px -4px 0px #090d16, inset 4px 4px 0px #475569;
+    cursor: default;
 }
 
 .winner-badge {
@@ -199,28 +306,28 @@ header h1 {
     top: 4px;
     left: 6px;
     font-family: 'Press Start 2P', monospace;
-    font-size: 1.1rem;
+    font-size: 0.95rem;
 }
 
 .player-name-tag {
     font-family: 'VT323', monospace;
-    font-size: 1.15rem;
+    font-size: 1.1rem;
     background: #000;
     color: var(--gold);
     border: 2px solid #fff;
-    padding: 1px 6px;
-    margin-top: 4px;
+    padding: 0 6px;
+    margin-top: 3px;
     max-width: 96%;
     overflow: hidden;
     text-overflow: ellipsis;
     white-space: nowrap;
 }
 
-/* Modal Retro */
+/* ==================== MODAL CAUTARE 8-BIT ==================== */
 .modal {
     position: fixed;
-    top: 0; left: 0; width: 100%; height: 100%;
-    background-color: rgba(0, 0, 0, 0.82);
+    inset: 0;
+    background: rgba(0, 0, 0, 0.85);
     display: flex;
     justify-content: center;
     align-items: center;
@@ -230,38 +337,42 @@ header h1 {
 .hidden { display: none !important; }
 
 .modal-content {
-    background: var(--card-bg);
-    color: #fff;
-    padding: 24px;
+    background: var(--board-frame);
     border: 6px solid #000;
     box-shadow: 10px 10px 0px #000;
-    width: 90%;
-    max-width: 440px;
+    padding: 22px;
+    width: 92%;
+    max-width: 450px;
     text-align: center;
     position: relative;
 }
 
 #modal-title {
     font-family: 'Press Start 2P', monospace;
-    font-size: 0.85rem;
+    font-size: 0.78rem;
     color: var(--gold);
-    line-height: 1.4;
+    line-height: 1.5;
+    margin-top: 10px;
 }
 
 .close-btn {
     position: absolute;
-    top: 10px; right: 12px;
+    top: 8px;
+    right: 10px;
+    background: var(--x-red);
+    color: #fff;
+    border: 3px solid #000;
     font-family: 'Press Start 2P', monospace;
-    font-size: 0.9rem;
+    font-size: 0.65rem;
+    padding: 4px 6px;
     cursor: pointer;
-    color: var(--x-color);
 }
 
 #player-search {
     font-family: 'VT323', monospace;
     width: 100%;
-    padding: 10px;
-    font-size: 1.4rem;
+    padding: 8px 10px;
+    font-size: 1.45rem;
     border: 4px solid #000;
     background: #000;
     color: var(--gold);
@@ -272,7 +383,7 @@ header h1 {
     list-style: none;
     padding: 0;
     margin: 8px 0 0 0;
-    max-height: 220px;
+    max-height: 230px;
     overflow-y: auto;
     border: 4px solid #000;
     background: #0f172a;
@@ -280,31 +391,32 @@ header h1 {
 }
 
 #autocomplete-list li {
-    padding: 8px 12px;
+    padding: 6px 10px;
     cursor: pointer;
     border-bottom: 2px solid #000;
-    font-size: 1.3rem;
+    font-size: 1.35rem;
     display: flex;
     align-items: center;
     gap: 10px;
 }
 
 #autocomplete-list li:hover {
-    background-color: var(--gold);
+    background: var(--gold);
     color: #000;
 }
 
 .mini-avatar {
-    width: 28px;
-    height: 28px;
+    width: 32px;
+    height: 32px;
     flex-shrink: 0;
 }
 
-@media (max-width: 650px) {
+@media (max-width: 640px) {
+    .controls-bar { flex-direction: column; gap: 8px; }
     #game-board {
-        grid-template-columns: 105px repeat(3, 90px);
-        grid-template-rows: 115px repeat(3, 105px);
-        gap: 6px;
+        grid-template-rows: 118px repeat(3, 105px);
+        gap: 5px;
+        padding: 6px;
     }
-    .pixel-icon-box { width: 38px; height: 38px; }
+    .pixel-icon-box { width: 40px; height: 40px; }
 }
