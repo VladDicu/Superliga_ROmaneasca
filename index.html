@@ -3,37 +3,54 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liga 1 Arcade - Footy Tic-Tac-Toe</title>
-    <!-- Font Pixel Art clasic -->
+    <title>Liga 1 Pixel Grid - Arcade Edition</title>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="style.css?v=2">
 </head>
 <body>
-    <header>
-        <h1>⚽ LIGA 1 PIXEL GRID</h1>
-        <p class="subtitle-arcade">GĂSEȘTE JUCĂTORUL COMUN PENTRU INTERSECȚIE</p>
-        <div class="controls-bar">
-            <span id="status-joc">TURĂ: <strong id="jucator-curent" class="x-color">X</strong></span>
-            <button id="btn-random" class="btn-pixel">🎲 GRILĂ NOUĂ</button>
-            <button id="btn-reset" class="btn-pixel secondary">🔄 RESET</button>
+    <!-- Marcajele terenului de fotbal pixelat din fundal -->
+    <div class="pitch-background">
+        <div class="pitch-border">
+            <div class="penalty-box top"></div>
+            <div class="center-line"></div>
+            <div class="center-circle"></div>
+            <div class="center-spot"></div>
+            <div class="penalty-box bottom"></div>
         </div>
-    </header>
+    </div>
 
-    <main>
-        <div id="game-board"></div>
-    </main>
+    <div class="app-wrapper">
+        <header>
+            <div class="title-banner">
+                <h1>LIGA 1 PIXEL GRID</h1>
+            </div>
+            <div class="controls-bar">
+                <div class="turn-indicator">
+                    TURĂ: <span id="jucator-curent" class="x-color">X</span>
+                </div>
+                <div class="action-buttons">
+                    <button id="btn-random" class="btn-pixel">🎲 GRILĂ DIVERSIFICATĂ</button>
+                    <button id="btn-reset" class="btn-pixel secondary">🔄 RESET</button>
+                </div>
+            </div>
+        </header>
 
-    <!-- Fereastra Modală Retro -->
+        <main>
+            <div id="game-board"></div>
+        </main>
+    </div>
+
+    <!-- Fereastra Modală 8-Bit -->
     <div id="search-modal" class="modal hidden">
         <div class="modal-content">
-            <span class="close-btn">[X]</span>
+            <button class="close-btn">[X]</button>
             <h3 id="modal-title">CAUTĂ JUCĂTOR</h3>
             <p id="modal-subtitle" class="subtitle"></p>
-            <input type="text" id="player-search" placeholder="SCRIE NUMELE..." autocomplete="off">
+            <input type="text" id="player-search" placeholder="TASTEAZĂ NUMELE FOTBALISTULUI..." autocomplete="off">
             <ul id="autocomplete-list"></ul>
         </div>
     </div>
 
-    <script src="script.js"></script>
+    <script src="script.js?v=2"></script>
 </body>
 </html>
