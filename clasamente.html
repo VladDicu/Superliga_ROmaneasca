@@ -3,9 +3,9 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Liga 1 Pixel Hub - Clasamente & Golgheteri</title>
+    <title>Liga 1 Pixel Hub - Clasamente & 5 Topuri Complete</title>
     <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css?v=6">
+    <link rel="stylesheet" href="style.css?v=8">
 </head>
 <body data-page="istorie">
     <div class="pitch-background">
@@ -23,21 +23,22 @@
             <div class="title-banner"><h1>LIGA 1 PIXEL HUB</h1></div>
             <nav class="arcade-tabs">
                 <a href="index.html" class="tab-btn">🏁 PIXEL GRID (X & 0)</a>
-                <a href="clasamente.html" class="tab-btn active">🏆 CLASAMENTE & GOLGHETERI</a>
+                <a href="clasamente.html" class="tab-btn active">🏆 CLASAMENTE & CELE 5 TOPURI</a>
                 <a href="meci.html" class="tab-btn">⚽ MECI 11v11 VS AI</a>
             </nav>
         </header>
 
         <section class="tab-view">
+            <!-- Bara Sezon & Etape -->
             <div class="controls-bar wide-bar">
-                <div>SEZON: <select id="select-sezon" class="pixel-select"></select></div>
+                <div>SEZON ECHIPE: <select id="select-sezon" class="pixel-select"></select></div>
                 <div>ETAPA: <select id="select-etapa" class="pixel-select"></select></div>
             </div>
 
-            <div class="istorie-grid-3col">
-                <!-- 1. Clasament Echipe -->
+            <!-- Clasamentul Echipei + Rezultatele Etapei -->
+            <div class="istorie-layout">
                 <div class="retro-panel">
-                    <h2 class="panel-title">📊 CLASAMENT & RATING 8-BIT</h2>
+                    <h2 class="panel-title">📊 CLASAMENT ECHIPE & RATING 8-BIT</h2>
                     <div class="table-scroll">
                         <table id="tabel-clasament" class="pixel-table">
                             <thead>
@@ -48,28 +49,95 @@
                     </div>
                 </div>
 
-                <!-- 2. Tabela Marcatorilor & Pasatorilor Decisivi -->
                 <div class="retro-panel">
-                    <h2 class="panel-title">👟 GOLGHETERI & PASATORI DECISIVI</h2>
+                    <h2 class="panel-title">⚽ REZULTATE ETAPĂ</h2>
+                    <div id="lista-meciuri" class="matches-scroll"></div>
+                </div>
+            </div>
+
+            <!-- Bara de filtrare pentru CELE 5 CLASAMENTE INDIVIDUALE -->
+            <div class="controls-bar wide-bar" style="margin-top: 8px;">
+                <div>
+                    MOD CLASAMENTE: 
+                    <select id="select-mod-top" class="pixel-select">
+                        <option value="ALL_TIME">🌟 ALL-TIME (1990-2025) - TOP 1000+</option>
+                        <option value="SEZON">📅 DOAR SEZONUL SELECTAT SUS</option>
+                    </select>
+                </div>
+                <div>
+                    🔍 CAUTĂ JUCĂTOR / CLUB: 
+                    <input type="text" id="cauta-in-top" class="pixel-select" placeholder="Tastează numele..." style="width: 220px;">
+                </div>
+            </div>
+
+            <!-- RÂNDUL 1 DE TOPURI OFENSIVE: 1. GOLURI+PASE | 2. GOLURI | 3. PASE DE GOL -->
+            <div class="istorie-grid-3col">
+                <div class="retro-panel">
+                    <h2 class="panel-title">🔥 1. GOLURI + PASE DE GOL <span id="count-total" class="badge-categorie cat-trofeu">0</span></h2>
                     <div class="table-scroll">
-                        <table id="tabel-marcatori" class="pixel-table">
+                        <table id="tabel-top-total" class="pixel-table">
                             <thead>
-                                <tr><th>#</th><th>JUCĂTOR</th><th>CLUB</th><th>⚽ GOL</th><th>🎯 PASE</th></tr>
+                                <tr><th>#</th><th>JUCĂTOR</th><th>CLUB</th><th>M</th><th>G</th><th>A</th><th>G+A</th></tr>
                             </thead>
                             <tbody></tbody>
                         </table>
                     </div>
                 </div>
 
-                <!-- 3. Rezultate pe Etape -->
                 <div class="retro-panel">
-                    <h2 class="panel-title">⚽ REZULTATE ETAPĂ</h2>
-                    <div id="lista-meciuri" class="matches-scroll"></div>
+                    <h2 class="panel-title">⚽ 2. TOP GOLURI <span id="count-goluri" class="badge-categorie cat-club">0</span></h2>
+                    <div class="table-scroll">
+                        <table id="tabel-top-goluri" class="pixel-table">
+                            <thead>
+                                <tr><th>#</th><th>JUCĂTOR</th><th>CLUB</th><th>M</th><th>⚽ GOLURI</th></tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="retro-panel">
+                    <h2 class="panel-title">🎯 3. TOP PASE DE GOL <span id="count-pase" class="badge-categorie cat-antrenor">0</span></h2>
+                    <div class="table-scroll">
+                        <table id="tabel-top-pase" class="pixel-table">
+                            <thead>
+                                <tr><th>#</th><th>JUCĂTOR</th><th>CLUB</th><th>M</th><th>🎯 PASE</th></tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+            <!-- RÂNDUL 2 DE TOPURI DISCIPLINĂ: 4. CARTONAȘE GALBENE | 5. CARTONAȘE ROȘII -->
+            <div class="istorie-layout" style="grid-template-columns: 1fr 1fr; margin-top: 6px;">
+                <div class="retro-panel">
+                    <h2 class="panel-title">🟨 4. TOP CARTONAȘE GALBENE <span id="count-galbene" class="badge-categorie cat-trofeu">0</span></h2>
+                    <div class="table-scroll">
+                        <table id="tabel-top-galbene" class="pixel-table">
+                            <thead>
+                                <tr><th>#</th><th>JUCĂTOR</th><th>CLUB</th><th>MECIURI</th><th>🟨 GALBENE</th></tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <div class="retro-panel">
+                    <h2 class="panel-title">🟥 5. TOP CARTONAȘE ROȘII <span id="count-rosii" class="badge-categorie" style="background:#ef4444; color:#fff;">0</span></h2>
+                    <div class="table-scroll">
+                        <table id="tabel-top-rosii" class="pixel-table">
+                            <thead>
+                                <tr><th>#</th><th>JUCĂTOR</th><th>CLUB</th><th>MECIURI</th><th>🟥 ROȘII</th></tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
                 </div>
             </div>
         </section>
     </div>
 
-    <script src="script.js?v=6"></script>
+    <script src="script.js?v=8"></script>
 </body>
 </html>
