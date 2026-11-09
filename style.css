@@ -650,6 +650,29 @@ main {
     #game-board {
         grid-template-rows: 118px repeat(3, 105px);
         gap: 5px;
+        .tab-btn {
+    text-decoration: none;
+    display: inline-block;
+}
+
+.wide-wrapper {
+    max-width: 1240px !important;
+}
+
+.wide-bar {
+    max-width: 1240px !important;
+}
+
+.istorie-grid-3col {
+    display: grid;
+    grid-template-columns: 1.25fr 1.05fr 0.95fr;
+    gap: 10px;
+    width: 100%;
+}
+
+@media (max-width: 1024px) {
+    .istorie-grid-3col { grid-template-columns: 1fr; }
+}
         padding: 6px;
     }
     .pixel-icon-box { width: 40px; height: 40px; }
