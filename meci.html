@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liga 1 Pixel Hub - Meci 11v11 vs AI</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=6">
+</head>
+<body data-page="meci">
+    <div class="pitch-background">
+        <div class="pitch-border">
+            <div class="penalty-box top"></div>
+            <div class="center-line"></div>
+            <div class="center-circle"></div>
+            <div class="center-spot"></div>
+            <div class="penalty-box bottom"></div>
+        </div>
+    </div>
+
+    <div class="app-wrapper">
+        <header>
+            <div class="title-banner"><h1>LIGA 1 PIXEL HUB</h1></div>
+            <nav class="arcade-tabs">
+                <a href="index.html" class="tab-btn">🏁 PIXEL GRID (X & 0)</a>
+                <a href="clasamente.html" class="tab-btn">🏆 CLASAMENTE & GOLGHETERI</a>
+                <a href="meci.html" class="tab-btn active">⚽ MECI 11v11 VS AI</a>
+            </nav>
+        </header>
+
+        <section class="tab-view">
+            <div class="controls-bar match-setup-bar">
+                <div class="team-selector-box">
+                    <span class="x-color">TU (4-3-3):</span>
+                    <select id="select-echipa-home" class="pixel-select"></select>
+                    <span id="ovr-home" class="ovr-badge">OVR 80</span>
+                </div>
+
+                <button id="btn-start-match" class="btn-pixel">▶️ START MECI 11v11</button>
+
+                <div class="team-selector-box">
+                    <span class="o-color">AI TACTIC:</span>
+                    <select id="select-echipa-away" class="pixel-select"></select>
+                    <span id="ovr-away" class="ovr-badge">OVR 78</span>
+                </div>
+            </div>
+
+            <div class="arcade-scoreboard">
+                <div id="score-home-name" class="sb-team">FCSB</div>
+                <div class="sb-center">
+                    <span id="score-home">0</span> - <span id="score-away">0</span>
+                    <div id="match-timer" class="sb-timer">02:00</div>
+                </div>
+                <div id="score-away-name" class="sb-team">DINAMO BUCUREȘTI</div>
+            </div>
+
+            <div class="canvas-wrapper">
+                <canvas id="pitch-canvas" width="920" height="540"></canvas>
+                <div id="goal-banner" class="goal-overlay hidden">GOOOL!</div>
+            </div>
+
+            <div class="controls-hint">
+                🎮 <strong>SĂGEȚI</strong>: Mișcare | <strong>W</strong>: Sprint | <strong>S</strong>: Pasă / Schimbă Jucător | <strong>A</strong>: Centrare / Deposedare | <strong>D</strong>: Șut / Alunecare
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js?v=6"></script>
+</body>
+</html>
