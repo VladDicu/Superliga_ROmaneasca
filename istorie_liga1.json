@@ -1776,7 +1776,184 @@
             "marcatori": []
           }
         ]
-      }
+      },
+      "statistici_jucatori": [
+        {
+          "jucator": "Florin Tănase",
+          "echipa": "România",
+          "m": 10,
+          "goluri": 11,
+          "pase": 8
+        },
+        {
+          "jucator": "Jovo Lukić",
+          "echipa": "Bosnia-Herzegovina",
+          "m": 9,
+          "goluri": 15,
+          "pase": 2
+        },
+        {
+          "jucator": "Issouf Macalou",
+          "echipa": "Franța",
+          "m": 12,
+          "goluri": 6,
+          "pase": 10
+        },
+        {
+          "jucator": "Alin Roman",
+          "echipa": "România",
+          "m": 18,
+          "goluri": 5,
+          "pase": 11
+        },
+        {
+          "jucator": "Alexandru Dobre",
+          "echipa": "România",
+          "m": 11,
+          "goluri": 15,
+          "pase": 0
+        },
+        {
+          "jucator": "Andrei Cordea",
+          "echipa": "România",
+          "m": 14,
+          "goluri": 11,
+          "pase": 4
+        },
+        {
+          "jucator": "Valentin Costache",
+          "echipa": "România",
+          "m": 12,
+          "goluri": 9,
+          "pase": 4
+        },
+        {
+          "jucator": "Ricardo Matos",
+          "echipa": "Portugalia",
+          "m": 15,
+          "goluri": 9,
+          "pase": 4
+        },
+        {
+          "jucator": "Dan Nistor",
+          "echipa": "România",
+          "m": 9,
+          "goluri": 6,
+          "pase": 7
+        },
+        {
+          "jucator": "Alexandru Ișfan",
+          "echipa": "România",
+          "m": 16,
+          "goluri": 9,
+          "pase": 3
+        },
+        {
+          "jucator": "Steven Nsimba",
+          "echipa": "Congo DR",
+          "m": 13,
+          "goluri": 9,
+          "pase": 3
+        },
+        {
+          "jucator": "Sebastian Mailat",
+          "echipa": "România",
+          "m": 17,
+          "goluri": 8,
+          "pase": 4
+        },
+        {
+          "jucator": "Darius Olaru",
+          "echipa": "România",
+          "m": 17,
+          "goluri": 7,
+          "pase": 5
+        },
+        {
+          "jucator": "Ștefan Baiaram",
+          "echipa": "România",
+          "m": 13,
+          "goluri": 7,
+          "pase": 5
+        },
+        {
+          "jucator": "Claudiu Petrila",
+          "echipa": "România",
+          "m": 18,
+          "goluri": 3,
+          "pase": 9
+        },
+        {
+          "jucator": "Meriton Korenica",
+          "echipa": "Kosovo",
+          "m": 15,
+          "goluri": 8,
+          "pase": 3
+        },
+        {
+          "jucator": "Adel Bettaieb",
+          "echipa": "Franța",
+          "m": 13,
+          "goluri": 8,
+          "pase": 3
+        },
+        {
+          "jucator": "Danny Armstrong",
+          "echipa": "Irlanda",
+          "m": 21,
+          "goluri": 5,
+          "pase": 5
+        },
+        {
+          "jucator": "Hervin Ongenda",
+          "echipa": "Belgia",
+          "m": 13,
+          "goluri": 4,
+          "pase": 6
+        },
+        {
+          "jucator": "Aurelian Chițu",
+          "echipa": "România",
+          "m": 17,
+          "goluri": 7,
+          "pase": 2
+        },
+        {
+          "jucator": "Ionuț Vînă",
+          "echipa": "România",
+          "m": 9,
+          "goluri": 7,
+          "pase": 2
+        },
+        {
+          "jucator": "Marius Coman",
+          "echipa": "România",
+          "m": 9,
+          "goluri": 7,
+          "pase": 2
+        },
+        {
+          "jucator": "Daniel Bîrligea",
+          "echipa": "România",
+          "m": 10,
+          "goluri": 7,
+          "pase": 2
+        },
+        {
+          "jucator": "Assad Al-Hamlawi",
+          "echipa": "Suedia",
+          "m": 9,
+          "goluri": 7,
+          "pase": 2
+        },
+        {
+          "jucator": "Florin Purece",
+          "echipa": "România",
+          "m": 16,
+          "goluri": 4,
+          "pase": 5
+        }
+      ]
     },
     "2024/25": {
       "clasament": [
@@ -3554,7 +3731,184 @@
             "marcatori": []
           }
         ]
-      }
+      },
+      "statistici_jucatori": [
+        {
+          "jucator": "Louis Munteanu",
+          "echipa": "România",
+          "m": 15,
+          "goluri": 19,
+          "pase": 2
+        },
+        {
+          "jucator": "Alexandru Mitriță",
+          "echipa": "România",
+          "m": 2,
+          "goluri": 13,
+          "pase": 5
+        },
+        {
+          "jucator": "Astrit Selmani",
+          "echipa": "Suedia",
+          "m": 5,
+          "goluri": 12,
+          "pase": 6
+        },
+        {
+          "jucator": "Dan Nistor",
+          "echipa": "România",
+          "m": 12,
+          "goluri": 10,
+          "pase": 6
+        },
+        {
+          "jucator": "Daniel Bîrligea",
+          "echipa": "România",
+          "m": 8,
+          "goluri": 12,
+          "pase": 3
+        },
+        {
+          "jucator": "Claudiu Petrila",
+          "echipa": "România",
+          "m": 20,
+          "goluri": 7,
+          "pase": 8
+        },
+        {
+          "jucator": "Vladislav Blănuță",
+          "echipa": "Moldova",
+          "m": 14,
+          "goluri": 10,
+          "pase": 3
+        },
+        {
+          "jucator": "Ștefan Baiaram",
+          "echipa": "România",
+          "m": 19,
+          "goluri": 10,
+          "pase": 2
+        },
+        {
+          "jucator": "Mamadou Thiam",
+          "echipa": "Franța",
+          "m": 16,
+          "goluri": 8,
+          "pase": 4
+        },
+        {
+          "jucator": "Darius Olaru",
+          "echipa": "România",
+          "m": 7,
+          "goluri": 8,
+          "pase": 3
+        },
+        {
+          "jucator": "Ianis Stoica",
+          "echipa": "România",
+          "m": 22,
+          "goluri": 8,
+          "pase": 3
+        },
+        {
+          "jucator": "Aurelian Chițu",
+          "echipa": "România",
+          "m": 17,
+          "goluri": 6,
+          "pase": 5
+        },
+        {
+          "jucator": "Jordan Gele",
+          "echipa": "Congo DR",
+          "m": 9,
+          "goluri": 6,
+          "pase": 5
+        },
+        {
+          "jucator": "Alexandru Tudorie",
+          "echipa": "România",
+          "m": 11,
+          "goluri": 8,
+          "pase": 2
+        },
+        {
+          "jucator": "Denis Alibec",
+          "echipa": "România",
+          "m": 4,
+          "goluri": 7,
+          "pase": 3
+        },
+        {
+          "jucator": "Meriton Korenica",
+          "echipa": "Kosovo",
+          "m": 11,
+          "goluri": 6,
+          "pase": 4
+        },
+        {
+          "jucator": "Alin Roman",
+          "echipa": "România",
+          "m": 15,
+          "goluri": 3,
+          "pase": 7
+        },
+        {
+          "jucator": "Cătălin Cîrjan",
+          "echipa": "România",
+          "m": 23,
+          "goluri": 7,
+          "pase": 2
+        },
+        {
+          "jucator": "Valentin Costache",
+          "echipa": "România",
+          "m": 19,
+          "goluri": 6,
+          "pase": 3
+        },
+        {
+          "jucator": "Frédéric Maciel",
+          "echipa": "Franța",
+          "m": 22,
+          "goluri": 4,
+          "pase": 5
+        },
+        {
+          "jucator": "Adi Chică-Roșă",
+          "echipa": "România",
+          "m": 16,
+          "goluri": 6,
+          "pase": 2
+        },
+        {
+          "jucator": "Rivaldinho",
+          "echipa": "Spania",
+          "m": 12,
+          "goluri": 5,
+          "pase": 3
+        },
+        {
+          "jucator": "Hakim Abdallah",
+          "echipa": "Franța",
+          "m": 9,
+          "goluri": 4,
+          "pase": 4
+        },
+        {
+          "jucator": "Adrian Păun",
+          "echipa": "România",
+          "m": 13,
+          "goluri": 3,
+          "pase": 5
+        },
+        {
+          "jucator": "Béni Nkololo",
+          "echipa": "Congo DR",
+          "m": 9,
+          "goluri": 2,
+          "pase": 6
+        }
+      ]
     },
     "2023/24": {
       "clasament": [
@@ -5332,7 +5686,184 @@
             "marcatori": []
           }
         ]
-      }
+      },
+      "statistici_jucatori": [
+        {
+          "jucator": "Florinel Coman",
+          "echipa": "România",
+          "m": 13,
+          "goluri": 14,
+          "pase": 8
+        },
+        {
+          "jucator": "Alexandru Mitriță",
+          "echipa": "România",
+          "m": 4,
+          "goluri": 11,
+          "pase": 10
+        },
+        {
+          "jucator": "Philip Otele",
+          "echipa": "Nigeria",
+          "m": 17,
+          "goluri": 13,
+          "pase": 6
+        },
+        {
+          "jucator": "Dan Nistor",
+          "echipa": "România",
+          "m": 5,
+          "goluri": 11,
+          "pase": 8
+        },
+        {
+          "jucator": "Aurelian Chițu",
+          "echipa": "România",
+          "m": 8,
+          "goluri": 10,
+          "pase": 7
+        },
+        {
+          "jucator": "Darius Olaru",
+          "echipa": "România",
+          "m": 10,
+          "goluri": 14,
+          "pase": 2
+        },
+        {
+          "jucator": "Albion Rrahmani",
+          "echipa": "Albania",
+          "m": 4,
+          "goluri": 13,
+          "pase": 3
+        },
+        {
+          "jucator": "Eduard Florescu",
+          "echipa": "România",
+          "m": 15,
+          "goluri": 10,
+          "pase": 4
+        },
+        {
+          "jucator": "Alexandru Pop",
+          "echipa": "Argentina",
+          "m": 22,
+          "goluri": 11,
+          "pase": 2
+        },
+        {
+          "jucator": "Marius Ștefănescu",
+          "echipa": "România",
+          "m": 9,
+          "goluri": 11,
+          "pase": 2
+        },
+        {
+          "jucator": "Alin Roman",
+          "echipa": "România",
+          "m": 12,
+          "goluri": 9,
+          "pase": 4
+        },
+        {
+          "jucator": "Daniel Popa",
+          "echipa": "România",
+          "m": 14,
+          "goluri": 8,
+          "pase": 5
+        },
+        {
+          "jucator": "Daniel Bîrligea",
+          "echipa": "România",
+          "m": 24,
+          "goluri": 8,
+          "pase": 5
+        },
+        {
+          "jucator": "Silviu Balaure",
+          "echipa": "România",
+          "m": 27,
+          "goluri": 7,
+          "pase": 6
+        },
+        {
+          "jucator": "Constantin Budescu",
+          "echipa": "România",
+          "m": 16,
+          "goluri": 6,
+          "pase": 7
+        },
+        {
+          "jucator": "Daniel Paraschiv",
+          "echipa": "Moldova",
+          "m": 19,
+          "goluri": 8,
+          "pase": 4
+        },
+        {
+          "jucator": "Jair Tavares",
+          "echipa": "Brazilia",
+          "m": 5,
+          "goluri": 6,
+          "pase": 6
+        },
+        {
+          "jucator": "Juan Bauzá",
+          "echipa": "Argentina",
+          "m": 10,
+          "goluri": 6,
+          "pase": 6
+        },
+        {
+          "jucator": "Claudiu Micovschi",
+          "echipa": "România",
+          "m": 15,
+          "goluri": 7,
+          "pase": 4
+        },
+        {
+          "jucator": "Funsho Bamgboye",
+          "echipa": "Ungaria",
+          "m": 10,
+          "goluri": 3,
+          "pase": 8
+        },
+        {
+          "jucator": "Nicușor Bancu",
+          "echipa": "România",
+          "m": 1,
+          "goluri": 2,
+          "pase": 9
+        },
+        {
+          "jucator": "Juri Cisotti",
+          "echipa": "Italia",
+          "m": 5,
+          "goluri": 7,
+          "pase": 3
+        },
+        {
+          "jucator": "Adam Nemec",
+          "echipa": "Slovakia",
+          "m": 14,
+          "goluri": 6,
+          "pase": 4
+        },
+        {
+          "jucator": "Jovan Marković",
+          "echipa": "Serbia",
+          "m": 14,
+          "goluri": 6,
+          "pase": 4
+        },
+        {
+          "jucator": "Frédéric Maciel",
+          "echipa": "Franța",
+          "m": 15,
+          "goluri": 4,
+          "pase": 6
+        }
+      ]
     },
     "2022/23": {
       "clasament": [
@@ -7110,7 +7641,184 @@
             "marcatori": []
           }
         ]
-      }
+      },
+      "statistici_jucatori": [
+        {
+          "jucator": "Marko Dugandzic",
+          "echipa": "Croaţia",
+          "m": 8,
+          "goluri": 16,
+          "pase": 2
+        },
+        {
+          "jucator": "Ciprian Deac",
+          "echipa": "România",
+          "m": 21,
+          "goluri": 5,
+          "pase": 12
+        },
+        {
+          "jucator": "Andrea Compagno",
+          "echipa": "Italia",
+          "m": 10,
+          "goluri": 16,
+          "pase": 0
+        },
+        {
+          "jucator": "Denis Alibec",
+          "echipa": "România",
+          "m": 8,
+          "goluri": 11,
+          "pase": 5
+        },
+        {
+          "jucator": "Daniel Paraschiv",
+          "echipa": "Moldova",
+          "m": 17,
+          "goluri": 10,
+          "pase": 3
+        },
+        {
+          "jucator": "Andrei Ivan",
+          "echipa": "România",
+          "m": 7,
+          "goluri": 10,
+          "pase": 2
+        },
+        {
+          "jucator": "Sebastian Mailat",
+          "echipa": "România",
+          "m": 22,
+          "goluri": 10,
+          "pase": 2
+        },
+        {
+          "jucator": "Cristian Neguț",
+          "echipa": "România",
+          "m": 14,
+          "goluri": 5,
+          "pase": 7
+        },
+        {
+          "jucator": "Alexandru Ioniță",
+          "echipa": "România",
+          "m": 19,
+          "goluri": 2,
+          "pase": 10
+        },
+        {
+          "jucator": "Malcom Edjouma",
+          "echipa": "Franța",
+          "m": 13,
+          "goluri": 8,
+          "pase": 3
+        },
+        {
+          "jucator": "Mario Rondón",
+          "echipa": "Portugalia",
+          "m": 17,
+          "goluri": 9,
+          "pase": 1
+        },
+        {
+          "jucator": "Arnold Garita",
+          "echipa": "Franța",
+          "m": 6,
+          "goluri": 9,
+          "pase": 1
+        },
+        {
+          "jucator": "Vitalie Damascan",
+          "echipa": "România",
+          "m": 14,
+          "goluri": 9,
+          "pase": 1
+        },
+        {
+          "jucator": "Christian Irobiso",
+          "echipa": "Portugalia",
+          "m": 6,
+          "goluri": 7,
+          "pase": 3
+        },
+        {
+          "jucator": "Daniel Popa",
+          "echipa": "România",
+          "m": 12,
+          "goluri": 6,
+          "pase": 4
+        },
+        {
+          "jucator": "Andrei Cordea",
+          "echipa": "România",
+          "m": 13,
+          "goluri": 6,
+          "pase": 4
+        },
+        {
+          "jucator": "Alexi Pitu",
+          "echipa": "România",
+          "m": 16,
+          "goluri": 5,
+          "pase": 5
+        },
+        {
+          "jucator": "Adnan Aganovic",
+          "echipa": "Croaţia",
+          "m": 14,
+          "goluri": 2,
+          "pase": 8
+        },
+        {
+          "jucator": "Rangelo Janga",
+          "echipa": "Olanda",
+          "m": 11,
+          "goluri": 8,
+          "pase": 1
+        },
+        {
+          "jucator": "Adam Nemec",
+          "echipa": "Slovakia",
+          "m": 20,
+          "goluri": 7,
+          "pase": 2
+        },
+        {
+          "jucator": "Bogdan Rusu",
+          "echipa": "România",
+          "m": 8,
+          "goluri": 7,
+          "pase": 2
+        },
+        {
+          "jucator": "Doru Popadiuc",
+          "echipa": "România",
+          "m": 12,
+          "goluri": 7,
+          "pase": 2
+        },
+        {
+          "jucator": "Cristian Manea",
+          "echipa": "România",
+          "m": 5,
+          "goluri": 5,
+          "pase": 4
+        },
+        {
+          "jucator": "Mihai Roman",
+          "echipa": "România",
+          "m": 12,
+          "goluri": 4,
+          "pase": 5
+        },
+        {
+          "jucator": "Louis Munteanu",
+          "echipa": "România",
+          "m": 15,
+          "goluri": 4,
+          "pase": 5
+        }
+      ]
     },
     "2021/22": {
       "clasament": [
@@ -8888,7 +9596,184 @@
             "marcatori": []
           }
         ]
-      }
+      },
+      "statistici_jucatori": [
+        {
+          "jucator": "Jefté Betancor",
+          "echipa": "Spania",
+          "m": 16,
+          "goluri": 15,
+          "pase": 2
+        },
+        {
+          "jucator": "Andrei Ivan",
+          "echipa": "România",
+          "m": 9,
+          "goluri": 11,
+          "pase": 6
+        },
+        {
+          "jucator": "Florin Tănase",
+          "echipa": "România",
+          "m": 5,
+          "goluri": 11,
+          "pase": 5
+        },
+        {
+          "jucator": "Ciprian Deac",
+          "echipa": "România",
+          "m": 14,
+          "goluri": 8,
+          "pase": 7
+        },
+        {
+          "jucator": "Gustavo Vagenin",
+          "echipa": "Italia",
+          "m": 14,
+          "goluri": 8,
+          "pase": 5
+        },
+        {
+          "jucator": "Jovan Marković",
+          "echipa": "Serbia",
+          "m": 10,
+          "goluri": 9,
+          "pase": 2
+        },
+        {
+          "jucator": "Vadim Rață",
+          "echipa": "România",
+          "m": 17,
+          "goluri": 7,
+          "pase": 4
+        },
+        {
+          "jucator": "Octavian Popescu",
+          "echipa": "România",
+          "m": 14,
+          "goluri": 7,
+          "pase": 3
+        },
+        {
+          "jucator": "Ianis Stoica",
+          "echipa": "România",
+          "m": 5,
+          "goluri": 6,
+          "pase": 4
+        },
+        {
+          "jucator": "Billel Omrani",
+          "echipa": "Franța",
+          "m": 13,
+          "goluri": 5,
+          "pase": 5
+        },
+        {
+          "jucator": "Ion Gheorghe",
+          "echipa": "România",
+          "m": 17,
+          "goluri": 5,
+          "pase": 5
+        },
+        {
+          "jucator": "William Baeten",
+          "echipa": "Belgia",
+          "m": 10,
+          "goluri": 5,
+          "pase": 5
+        },
+        {
+          "jucator": "Ronaldo Deaconu",
+          "echipa": "România",
+          "m": 11,
+          "goluri": 3,
+          "pase": 7
+        },
+        {
+          "jucator": "Gabriel Debeljuh",
+          "echipa": "Croaţia",
+          "m": 13,
+          "goluri": 9,
+          "pase": 0
+        },
+        {
+          "jucator": "Claudiu Bălan",
+          "echipa": "România",
+          "m": 17,
+          "goluri": 8,
+          "pase": 1
+        },
+        {
+          "jucator": "Adrian Petre",
+          "echipa": "România",
+          "m": 5,
+          "goluri": 8,
+          "pase": 1
+        },
+        {
+          "jucator": "Deian Sorescu",
+          "echipa": "România",
+          "m": 2,
+          "goluri": 8,
+          "pase": 1
+        },
+        {
+          "jucator": "Bogdan Rusu",
+          "echipa": "România",
+          "m": 5,
+          "goluri": 7,
+          "pase": 2
+        },
+        {
+          "jucator": "Valentin Gheorghe",
+          "echipa": "România",
+          "m": 6,
+          "goluri": 6,
+          "pase": 3
+        },
+        {
+          "jucator": "Claudiu Petrila",
+          "echipa": "România",
+          "m": 8,
+          "goluri": 6,
+          "pase": 3
+        },
+        {
+          "jucator": "Alexandru Cîmpanu",
+          "echipa": "România",
+          "m": 11,
+          "goluri": 6,
+          "pase": 3
+        },
+        {
+          "jucator": "Daniel Popa",
+          "echipa": "România",
+          "m": 5,
+          "goluri": 5,
+          "pase": 4
+        },
+        {
+          "jucator": "Malcom Edjouma",
+          "echipa": "Franța",
+          "m": 6,
+          "goluri": 5,
+          "pase": 4
+        },
+        {
+          "jucator": "Andrei Cordea",
+          "echipa": "România",
+          "m": 16,
+          "goluri": 4,
+          "pase": 5
+        },
+        {
+          "jucator": "David Miculescu",
+          "echipa": "România",
+          "m": 12,
+          "goluri": 8,
+          "pase": 0
+        }
+      ]
     },
     "2020/21": {
       "clasament": [
@@ -10666,7 +11551,184 @@
             "marcatori": []
           }
         ]
-      }
+      },
+      "statistici_jucatori": [
+        {
+          "jucator": "Florin Tănase",
+          "echipa": "România",
+          "m": 12,
+          "goluri": 19,
+          "pase": 4
+        },
+        {
+          "jucator": "Dennis Man",
+          "echipa": "România",
+          "m": 5,
+          "goluri": 14,
+          "pase": 6
+        },
+        {
+          "jucator": "Olimpiu Moruțan",
+          "echipa": "România",
+          "m": 5,
+          "goluri": 6,
+          "pase": 12
+        },
+        {
+          "jucator": "Cephas Malele",
+          "echipa": "Angola",
+          "m": 6,
+          "goluri": 14,
+          "pase": 3
+        },
+        {
+          "jucator": "Hamidou Keyta",
+          "echipa": "Senegal",
+          "m": 13,
+          "goluri": 14,
+          "pase": 3
+        },
+        {
+          "jucator": "Constantin Budescu",
+          "echipa": "România",
+          "m": 5,
+          "goluri": 8,
+          "pase": 9
+        },
+        {
+          "jucator": "Ciprian Deac",
+          "echipa": "România",
+          "m": 10,
+          "goluri": 10,
+          "pase": 5
+        },
+        {
+          "jucator": "Ronaldo Deaconu",
+          "echipa": "România",
+          "m": 12,
+          "goluri": 7,
+          "pase": 8
+        },
+        {
+          "jucator": "Pavol Safranko",
+          "echipa": "Slovakia",
+          "m": 7,
+          "goluri": 7,
+          "pase": 6
+        },
+        {
+          "jucator": "Alexandru Cicâldău",
+          "echipa": "România",
+          "m": 12,
+          "goluri": 9,
+          "pase": 2
+        },
+        {
+          "jucator": "Deian Sorescu",
+          "echipa": "România",
+          "m": 4,
+          "goluri": 4,
+          "pase": 7
+        },
+        {
+          "jucator": "Kevin Brobbey",
+          "echipa": "Ghana",
+          "m": 6,
+          "goluri": 9,
+          "pase": 1
+        },
+        {
+          "jucator": "Andrei Cristea",
+          "echipa": "România",
+          "m": 8,
+          "goluri": 7,
+          "pase": 3
+        },
+        {
+          "jucator": "Ricardo Valente",
+          "echipa": "Portugalia",
+          "m": 7,
+          "goluri": 4,
+          "pase": 5
+        },
+        {
+          "jucator": "Nicolao Cardoso",
+          "echipa": "România",
+          "m": 5,
+          "goluri": 7,
+          "pase": 1
+        },
+        {
+          "jucator": "Gabriel Debeljuh",
+          "echipa": "Croaţia",
+          "m": 10,
+          "goluri": 7,
+          "pase": 1
+        },
+        {
+          "jucator": "Daniel Popa",
+          "echipa": "România",
+          "m": 13,
+          "goluri": 6,
+          "pase": 2
+        },
+        {
+          "jucator": "Valentin Gheorghe",
+          "echipa": "România",
+          "m": 12,
+          "goluri": 6,
+          "pase": 2
+        },
+        {
+          "jucator": "Ion Gheorghe",
+          "echipa": "România",
+          "m": 9,
+          "goluri": 5,
+          "pase": 3
+        },
+        {
+          "jucator": "Octavian Popescu",
+          "echipa": "România",
+          "m": 11,
+          "goluri": 1,
+          "pase": 7
+        },
+        {
+          "jucator": "Jefté Betancor",
+          "echipa": "Spania",
+          "m": 10,
+          "goluri": 6,
+          "pase": 1
+        },
+        {
+          "jucator": "Darius Olaru",
+          "echipa": "România",
+          "m": 9,
+          "goluri": 6,
+          "pase": 1
+        },
+        {
+          "jucator": "Andrei Ivan",
+          "echipa": "România",
+          "m": 10,
+          "goluri": 5,
+          "pase": 2
+        },
+        {
+          "jucator": "David Mayoral",
+          "echipa": "Spania",
+          "m": 4,
+          "goluri": 5,
+          "pase": 2
+        },
+        {
+          "jucator": "Daniel Florea",
+          "echipa": "România",
+          "m": 24,
+          "goluri": 4,
+          "pase": 3
+        }
+      ]
     },
     "2019/20": {
       "clasament": [
@@ -12054,7 +13116,184 @@
             "marcatori": []
           }
         ]
-      }
+      },
+      "statistici_jucatori": [
+        {
+          "jucator": "Florinel Coman",
+          "echipa": "România",
+          "m": 7,
+          "goluri": 11,
+          "pase": 9
+        },
+        {
+          "jucator": "Denis Alibec",
+          "echipa": "România",
+          "m": 8,
+          "goluri": 10,
+          "pase": 9
+        },
+        {
+          "jucator": "Alexandru Cicâldău",
+          "echipa": "România",
+          "m": 2,
+          "goluri": 9,
+          "pase": 5
+        },
+        {
+          "jucator": "Dan Nistor",
+          "echipa": "România",
+          "m": 1,
+          "goluri": 4,
+          "pase": 10
+        },
+        {
+          "jucator": "Gabriel Iancu",
+          "echipa": "România",
+          "m": 4,
+          "goluri": 10,
+          "pase": 3
+        },
+        {
+          "jucator": "Constantin Budescu",
+          "echipa": "România",
+          "m": 3,
+          "goluri": 6,
+          "pase": 7
+        },
+        {
+          "jucator": "Adrian Păun",
+          "echipa": "România",
+          "m": 5,
+          "goluri": 6,
+          "pase": 7
+        },
+        {
+          "jucator": "Deian Sorescu",
+          "echipa": "România",
+          "m": 6,
+          "goluri": 6,
+          "pase": 7
+        },
+        {
+          "jucator": "Valentin Gheorghe",
+          "echipa": "România",
+          "m": 11,
+          "goluri": 10,
+          "pase": 2
+        },
+        {
+          "jucator": "Ciprian Deac",
+          "echipa": "România",
+          "m": 2,
+          "goluri": 7,
+          "pase": 5
+        },
+        {
+          "jucator": "Sergiu Buș",
+          "echipa": "România",
+          "m": 5,
+          "goluri": 9,
+          "pase": 2
+        },
+        {
+          "jucator": "Jakub Vojtus",
+          "echipa": "Slovakia",
+          "m": 4,
+          "goluri": 8,
+          "pase": 3
+        },
+        {
+          "jucator": "Rivaldinho",
+          "echipa": "Spania",
+          "m": 4,
+          "goluri": 6,
+          "pase": 4
+        },
+        {
+          "jucator": "Nicolao Cardoso",
+          "echipa": "România",
+          "m": 10,
+          "goluri": 5,
+          "pase": 5
+        },
+        {
+          "jucator": "Florin Tănase",
+          "echipa": "România",
+          "m": 3,
+          "goluri": 5,
+          "pase": 5
+        },
+        {
+          "jucator": "Valentin Costache",
+          "echipa": "România",
+          "m": 15,
+          "goluri": 4,
+          "pase": 6
+        },
+        {
+          "jucator": "Billel Omrani",
+          "echipa": "Franța",
+          "m": 6,
+          "goluri": 6,
+          "pase": 3
+        },
+        {
+          "jucator": "Goran Karanovic",
+          "echipa": "Serbia",
+          "m": 5,
+          "goluri": 8,
+          "pase": 0
+        },
+        {
+          "jucator": "Gabriel Debeljuh",
+          "echipa": "Croaţia",
+          "m": 4,
+          "goluri": 8,
+          "pase": 0
+        },
+        {
+          "jucator": "Marius Constantin",
+          "echipa": "România",
+          "m": 0,
+          "goluri": 7,
+          "pase": 1
+        },
+        {
+          "jucator": "Eric",
+          "echipa": "România",
+          "m": 4,
+          "goluri": 6,
+          "pase": 2
+        },
+        {
+          "jucator": "Reagy Ofosu",
+          "echipa": "Ghana",
+          "m": 10,
+          "goluri": 5,
+          "pase": 3
+        },
+        {
+          "jucator": "Stefan Ashkovski",
+          "echipa": "Bulgaria",
+          "m": 16,
+          "goluri": 5,
+          "pase": 3
+        },
+        {
+          "jucator": "Petrișor Petrescu",
+          "echipa": "România",
+          "m": 6,
+          "goluri": 5,
+          "pase": 3
+        },
+        {
+          "jucator": "Platini",
+          "echipa": "Portugalia",
+          "m": 2,
+          "goluri": 1,
+          "pase": 7
+        }
+      ]
     },
     "2018/19": {
       "clasament": [
@@ -13442,7 +14681,184 @@
             "marcatori": []
           }
         ]
-      }
+      },
+      "statistici_jucatori": [
+        {
+          "jucator": "George Țucudean",
+          "echipa": "România",
+          "m": 13,
+          "goluri": 16,
+          "pase": 2
+        },
+        {
+          "jucator": "Alexandru Mitriță",
+          "echipa": "România",
+          "m": 3,
+          "goluri": 13,
+          "pase": 4
+        },
+        {
+          "jucator": "Elvir Koljic",
+          "echipa": "Bosnia-Herzegovina",
+          "m": 6,
+          "goluri": 12,
+          "pase": 3
+        },
+        {
+          "jucator": "Ibrahima Tandia",
+          "echipa": "Franța",
+          "m": 5,
+          "goluri": 10,
+          "pase": 5
+        },
+        {
+          "jucator": "Harlem Gnohéré",
+          "echipa": "Cote d'Ivoire",
+          "m": 7,
+          "goluri": 11,
+          "pase": 3
+        },
+        {
+          "jucator": "Florin Tănase",
+          "echipa": "România",
+          "m": 8,
+          "goluri": 8,
+          "pase": 6
+        },
+        {
+          "jucator": "Florinel Coman",
+          "echipa": "România",
+          "m": 14,
+          "goluri": 7,
+          "pase": 7
+        },
+        {
+          "jucator": "Azdren Llullaku",
+          "echipa": "Italia",
+          "m": 7,
+          "goluri": 6,
+          "pase": 8
+        },
+        {
+          "jucator": "Billel Omrani",
+          "echipa": "Franța",
+          "m": 9,
+          "goluri": 5,
+          "pase": 8
+        },
+        {
+          "jucator": "Dylan Flores",
+          "echipa": "Costa Rica",
+          "m": 15,
+          "goluri": 7,
+          "pase": 5
+        },
+        {
+          "jucator": "Ianis Hagi",
+          "echipa": "Turcia",
+          "m": 3,
+          "goluri": 7,
+          "pase": 5
+        },
+        {
+          "jucator": "Andrei Cristea",
+          "echipa": "România",
+          "m": 14,
+          "goluri": 7,
+          "pase": 4
+        },
+        {
+          "jucator": "Dennis Man",
+          "echipa": "România",
+          "m": 8,
+          "goluri": 7,
+          "pase": 4
+        },
+        {
+          "jucator": "Denis Alibec",
+          "echipa": "România",
+          "m": 4,
+          "goluri": 4,
+          "pase": 6
+        },
+        {
+          "jucator": "Nicușor Bancu",
+          "echipa": "România",
+          "m": 0,
+          "goluri": 3,
+          "pase": 7
+        },
+        {
+          "jucator": "Dan Nistor",
+          "echipa": "România",
+          "m": 3,
+          "goluri": 2,
+          "pase": 8
+        },
+        {
+          "jucator": "Diogo Salomão",
+          "echipa": "Guinea-Bissau",
+          "m": 5,
+          "goluri": 6,
+          "pase": 3
+        },
+        {
+          "jucator": "Mihai Roman",
+          "echipa": "România",
+          "m": 8,
+          "goluri": 5,
+          "pase": 4
+        },
+        {
+          "jucator": "Platini",
+          "echipa": "Portugalia",
+          "m": 4,
+          "goluri": 4,
+          "pase": 5
+        },
+        {
+          "jucator": "Julien Begue",
+          "echipa": "Réunion",
+          "m": 13,
+          "goluri": 4,
+          "pase": 5
+        },
+        {
+          "jucator": "Alexandru Cicâldău",
+          "echipa": "România",
+          "m": 3,
+          "goluri": 2,
+          "pase": 7
+        },
+        {
+          "jucator": "Alexandru Tudorie",
+          "echipa": "România",
+          "m": 7,
+          "goluri": 6,
+          "pase": 2
+        },
+        {
+          "jucator": "Mediop Ndiaye",
+          "echipa": "Senegal",
+          "m": 5,
+          "goluri": 6,
+          "pase": 2
+        },
+        {
+          "jucator": "Carlos Fortes",
+          "echipa": "Portugalia",
+          "m": 12,
+          "goluri": 5,
+          "pase": 3
+        },
+        {
+          "jucator": "Denis Drăguș",
+          "echipa": "România",
+          "m": 9,
+          "goluri": 5,
+          "pase": 3
+        }
+      ]
     },
     "2017/18": {
       "clasament": [
@@ -14830,7 +16246,184 @@
             "marcatori": []
           }
         ]
-      }
+      },
+      "statistici_jucatori": [
+        {
+          "jucator": "Florin Tănase",
+          "echipa": "România",
+          "m": 8,
+          "goluri": 9,
+          "pase": 7
+        },
+        {
+          "jucator": "George Țucudean",
+          "echipa": "România",
+          "m": 11,
+          "goluri": 12,
+          "pase": 3
+        },
+        {
+          "jucator": "Alexandru Ioniță",
+          "echipa": "România",
+          "m": 12,
+          "goluri": 11,
+          "pase": 4
+        },
+        {
+          "jucator": "Constantin Budescu",
+          "echipa": "România",
+          "m": 3,
+          "goluri": 7,
+          "pase": 8
+        },
+        {
+          "jucator": "Ciprian Deac",
+          "echipa": "România",
+          "m": 9,
+          "goluri": 4,
+          "pase": 11
+        },
+        {
+          "jucator": "Gustavo Vagenin",
+          "echipa": "Italia",
+          "m": 9,
+          "goluri": 11,
+          "pase": 3
+        },
+        {
+          "jucator": "Harlem Gnohéré",
+          "echipa": "Cote d'Ivoire",
+          "m": 6,
+          "goluri": 12,
+          "pase": 1
+        },
+        {
+          "jucator": "Paul Batin",
+          "echipa": "România",
+          "m": 5,
+          "goluri": 10,
+          "pase": 3
+        },
+        {
+          "jucator": "Eric",
+          "echipa": "România",
+          "m": 10,
+          "goluri": 7,
+          "pase": 6
+        },
+        {
+          "jucator": "Diogo Salomão",
+          "echipa": "Guinea-Bissau",
+          "m": 4,
+          "goluri": 4,
+          "pase": 9
+        },
+        {
+          "jucator": "Alexandru Băluță",
+          "echipa": "România",
+          "m": 6,
+          "goluri": 8,
+          "pase": 4
+        },
+        {
+          "jucator": "Dennis Man",
+          "echipa": "România",
+          "m": 7,
+          "goluri": 8,
+          "pase": 4
+        },
+        {
+          "jucator": "Silviu Balaure",
+          "echipa": "România",
+          "m": 10,
+          "goluri": 8,
+          "pase": 3
+        },
+        {
+          "jucator": "Andrei Cristea",
+          "echipa": "România",
+          "m": 8,
+          "goluri": 6,
+          "pase": 5
+        },
+        {
+          "jucator": "Mihai Roman",
+          "echipa": "România",
+          "m": 8,
+          "goluri": 8,
+          "pase": 2
+        },
+        {
+          "jucator": "Emmanuel Culio",
+          "echipa": "Italia",
+          "m": 5,
+          "goluri": 7,
+          "pase": 3
+        },
+        {
+          "jucator": "Laurențiu Buș",
+          "echipa": "România",
+          "m": 18,
+          "goluri": 7,
+          "pase": 3
+        },
+        {
+          "jucator": "Alexandru Mitriță",
+          "echipa": "România",
+          "m": 11,
+          "goluri": 7,
+          "pase": 3
+        },
+        {
+          "jucator": "Claudiu Bumba",
+          "echipa": "Ungaria",
+          "m": 6,
+          "goluri": 6,
+          "pase": 4
+        },
+        {
+          "jucator": "Platini",
+          "echipa": "Portugalia",
+          "m": 15,
+          "goluri": 7,
+          "pase": 2
+        },
+        {
+          "jucator": "Paul Anton",
+          "echipa": "Ungaria",
+          "m": 7,
+          "goluri": 6,
+          "pase": 3
+        },
+        {
+          "jucator": "Adam Nemec",
+          "echipa": "Slovakia",
+          "m": 10,
+          "goluri": 5,
+          "pase": 4
+        },
+        {
+          "jucator": "Sergiu Hanca",
+          "echipa": "România",
+          "m": 7,
+          "goluri": 3,
+          "pase": 6
+        },
+        {
+          "jucator": "Marian Cristescu",
+          "echipa": "România",
+          "m": 11,
+          "goluri": 7,
+          "pase": 1
+        },
+        {
+          "jucator": "Alexandru Tudorie",
+          "echipa": "România",
+          "m": 4,
+          "goluri": 7,
+          "pase": 1
+        }
+      ]
     },
     "2016/17": {
       "clasament": [
@@ -16218,7 +17811,184 @@
             "marcatori": []
           }
         ]
-      }
+      },
+      "statistici_jucatori": [
+        {
+          "jucator": "Azdren Llullaku",
+          "echipa": "Italia",
+          "m": 7,
+          "goluri": 16,
+          "pase": 3
+        },
+        {
+          "jucator": "Aurelian Chițu",
+          "echipa": "România",
+          "m": 6,
+          "goluri": 10,
+          "pase": 6
+        },
+        {
+          "jucator": "Constantin Budescu",
+          "echipa": "România",
+          "m": 6,
+          "goluri": 6,
+          "pase": 8
+        },
+        {
+          "jucator": "Cristian Bud",
+          "echipa": "România",
+          "m": 12,
+          "goluri": 11,
+          "pase": 1
+        },
+        {
+          "jucator": "Sergiu Hanca",
+          "echipa": "România",
+          "m": 10,
+          "goluri": 4,
+          "pase": 8
+        },
+        {
+          "jucator": "Andrei Cristea",
+          "echipa": "România",
+          "m": 11,
+          "goluri": 8,
+          "pase": 3
+        },
+        {
+          "jucator": "Fernando Boldrin",
+          "echipa": "Portugalia",
+          "m": 9,
+          "goluri": 8,
+          "pase": 3
+        },
+        {
+          "jucator": "Harlem Gnohéré",
+          "echipa": "Cote d'Ivoire",
+          "m": 9,
+          "goluri": 7,
+          "pase": 4
+        },
+        {
+          "jucator": "Valentin Lazăr",
+          "echipa": "România",
+          "m": 13,
+          "goluri": 7,
+          "pase": 4
+        },
+        {
+          "jucator": "Filipe Nascimento",
+          "echipa": "Portugalia",
+          "m": 7,
+          "goluri": 6,
+          "pase": 5
+        },
+        {
+          "jucator": "Florin Cernat",
+          "echipa": "România",
+          "m": 13,
+          "goluri": 5,
+          "pase": 6
+        },
+        {
+          "jucator": "Antun Palic",
+          "echipa": "Croaţia",
+          "m": 8,
+          "goluri": 1,
+          "pase": 10
+        },
+        {
+          "jucator": "Adam Nemec",
+          "echipa": "Slovakia",
+          "m": 13,
+          "goluri": 8,
+          "pase": 2
+        },
+        {
+          "jucator": "Petre Ivanovici",
+          "echipa": "România",
+          "m": 6,
+          "goluri": 8,
+          "pase": 2
+        },
+        {
+          "jucator": "Vlad Morar",
+          "echipa": "România",
+          "m": 6,
+          "goluri": 7,
+          "pase": 3
+        },
+        {
+          "jucator": "István Fülöp",
+          "echipa": "Ungaria",
+          "m": 6,
+          "goluri": 7,
+          "pase": 3
+        },
+        {
+          "jucator": "Lukács Bőle",
+          "echipa": "Ungaria",
+          "m": 3,
+          "goluri": 6,
+          "pase": 4
+        },
+        {
+          "jucator": "Andrei Ivan",
+          "echipa": "România",
+          "m": 3,
+          "goluri": 6,
+          "pase": 4
+        },
+        {
+          "jucator": "Hristo Zlatinski",
+          "echipa": "Bulgaria",
+          "m": 3,
+          "goluri": 4,
+          "pase": 6
+        },
+        {
+          "jucator": "Mircea Axente",
+          "echipa": "România",
+          "m": 6,
+          "goluri": 9,
+          "pase": 0
+        },
+        {
+          "jucator": "Alexandru Munteanu",
+          "echipa": "România",
+          "m": 8,
+          "goluri": 5,
+          "pase": 4
+        },
+        {
+          "jucator": "William Amorim",
+          "echipa": "România",
+          "m": 6,
+          "goluri": 2,
+          "pase": 7
+        },
+        {
+          "jucator": "Eric",
+          "echipa": "România",
+          "m": 14,
+          "goluri": 1,
+          "pase": 8
+        },
+        {
+          "jucator": "Adrian Bălan",
+          "echipa": "România",
+          "m": 7,
+          "goluri": 6,
+          "pase": 2
+        },
+        {
+          "jucator": "Daniel Niculae",
+          "echipa": "România",
+          "m": 7,
+          "goluri": 5,
+          "pase": 3
+        }
+      ]
     },
     "2015/16": {
       "clasament": [
@@ -17606,7 +19376,184 @@
             "marcatori": []
           }
         ]
-      }
+      },
+      "statistici_jucatori": [
+        {
+          "jucator": "Ioan Hora",
+          "echipa": "România",
+          "m": 13,
+          "goluri": 13,
+          "pase": 2
+        },
+        {
+          "jucator": "Nicolae Stanciu",
+          "echipa": "România",
+          "m": 9,
+          "goluri": 9,
+          "pase": 6
+        },
+        {
+          "jucator": "Constantin Budescu",
+          "echipa": "România",
+          "m": 5,
+          "goluri": 8,
+          "pase": 7
+        },
+        {
+          "jucator": "Florin Tănase",
+          "echipa": "România",
+          "m": 11,
+          "goluri": 10,
+          "pase": 4
+        },
+        {
+          "jucator": "Denis Alibec",
+          "echipa": "România",
+          "m": 9,
+          "goluri": 8,
+          "pase": 6
+        },
+        {
+          "jucator": "Cristian López",
+          "echipa": "Spania",
+          "m": 6,
+          "goluri": 10,
+          "pase": 3
+        },
+        {
+          "jucator": "Florin Cernat",
+          "echipa": "România",
+          "m": 5,
+          "goluri": 8,
+          "pase": 5
+        },
+        {
+          "jucator": "Bojan Golubovic",
+          "echipa": "Bosnia-Herzegovina",
+          "m": 0,
+          "goluri": 8,
+          "pase": 4
+        },
+        {
+          "jucator": "Harlem Gnohéré",
+          "echipa": "Cote d'Ivoire",
+          "m": 5,
+          "goluri": 9,
+          "pase": 2
+        },
+        {
+          "jucator": "Adnan Aganovic",
+          "echipa": "Croaţia",
+          "m": 10,
+          "goluri": 7,
+          "pase": 3
+        },
+        {
+          "jucator": "Hamed Koné",
+          "echipa": "Cote d'Ivoire",
+          "m": 3,
+          "goluri": 5,
+          "pase": 5
+        },
+        {
+          "jucator": "Javi Hernández",
+          "echipa": "Spania",
+          "m": 14,
+          "goluri": 4,
+          "pase": 6
+        },
+        {
+          "jucator": "Vlad Achim",
+          "echipa": "România",
+          "m": 4,
+          "goluri": 4,
+          "pase": 6
+        },
+        {
+          "jucator": "Dorin Rotariu",
+          "echipa": "România",
+          "m": 2,
+          "goluri": 6,
+          "pase": 3
+        },
+        {
+          "jucator": "Attila Hadnagy",
+          "echipa": "Ungaria",
+          "m": 7,
+          "goluri": 5,
+          "pase": 4
+        },
+        {
+          "jucator": "Grégory Tadé",
+          "echipa": "Cote d'Ivoire",
+          "m": 4,
+          "goluri": 4,
+          "pase": 5
+        },
+        {
+          "jucator": "Mihai Răduț",
+          "echipa": "România",
+          "m": 12,
+          "goluri": 4,
+          "pase": 5
+        },
+        {
+          "jucator": "Fernando Boldrin",
+          "echipa": "Portugalia",
+          "m": 5,
+          "goluri": 5,
+          "pase": 3
+        },
+        {
+          "jucator": "Nuno Rocha",
+          "echipa": "Cape Verde",
+          "m": 5,
+          "goluri": 5,
+          "pase": 3
+        },
+        {
+          "jucator": "Bănel Nicoliță",
+          "echipa": "România",
+          "m": 3,
+          "goluri": 4,
+          "pase": 4
+        },
+        {
+          "jucator": "Quenten Martinus",
+          "echipa": "Olanda",
+          "m": 13,
+          "goluri": 4,
+          "pase": 4
+        },
+        {
+          "jucator": "Thaer Bawab",
+          "echipa": "Spania",
+          "m": 11,
+          "goluri": 3,
+          "pase": 5
+        },
+        {
+          "jucator": "Marius Pena",
+          "echipa": "România",
+          "m": 6,
+          "goluri": 3,
+          "pase": 5
+        },
+        {
+          "jucator": "Marcel Essombé",
+          "echipa": "Franța",
+          "m": 9,
+          "goluri": 6,
+          "pase": 1
+        },
+        {
+          "jucator": "Alexandru Chipciu",
+          "echipa": "România",
+          "m": 4,
+          "goluri": 5,
+          "pase": 2
+        }
+      ]
     },
     "2014/15": {
       "clasament": [
@@ -19822,7 +21769,184 @@
             "marcatori": []
           }
         ]
-      }
+      },
+      "statistici_jucatori": [
+        {
+          "jucator": "Mihai Roman",
+          "echipa": "România",
+          "m": 14,
+          "goluri": 16,
+          "pase": 5
+        },
+        {
+          "jucator": "Grégory Tadé",
+          "echipa": "Cote d'Ivoire",
+          "m": 7,
+          "goluri": 18,
+          "pase": 1
+        },
+        {
+          "jucator": "Constantin Budescu",
+          "echipa": "România",
+          "m": 12,
+          "goluri": 10,
+          "pase": 9
+        },
+        {
+          "jucator": "Toto Tamuz",
+          "echipa": "Nigeria",
+          "m": 12,
+          "goluri": 11,
+          "pase": 5
+        },
+        {
+          "jucator": "Marian Constantinescu",
+          "echipa": "România",
+          "m": 13,
+          "goluri": 11,
+          "pase": 4
+        },
+        {
+          "jucator": "Nuno Rocha",
+          "echipa": "Cape Verde",
+          "m": 11,
+          "goluri": 8,
+          "pase": 7
+        },
+        {
+          "jucator": "Lucian Sânmărtean",
+          "echipa": "România",
+          "m": 7,
+          "goluri": 3,
+          "pase": 12
+        },
+        {
+          "jucator": "Bogdan Mitrea",
+          "echipa": "România",
+          "m": 2,
+          "goluri": 14,
+          "pase": 0
+        },
+        {
+          "jucator": "Thaer Bawab",
+          "echipa": "Spania",
+          "m": 15,
+          "goluri": 9,
+          "pase": 5
+        },
+        {
+          "jucator": "Ioan Hora",
+          "echipa": "România",
+          "m": 3,
+          "goluri": 9,
+          "pase": 5
+        },
+        {
+          "jucator": "Florin Cernat",
+          "echipa": "România",
+          "m": 7,
+          "goluri": 6,
+          "pase": 8
+        },
+        {
+          "jucator": "Ousmane N'Doye",
+          "echipa": "Franța",
+          "m": 8,
+          "goluri": 12,
+          "pase": 1
+        },
+        {
+          "jucator": "Claudiu Keșerü",
+          "echipa": "România",
+          "m": 8,
+          "goluri": 12,
+          "pase": 1
+        },
+        {
+          "jucator": "Kamil Bilinski",
+          "echipa": "Polonia",
+          "m": 9,
+          "goluri": 11,
+          "pase": 2
+        },
+        {
+          "jucator": "Attila Hadnagy",
+          "echipa": "Ungaria",
+          "m": 12,
+          "goluri": 9,
+          "pase": 3
+        },
+        {
+          "jucator": "Claudiu Bumba",
+          "echipa": "Ungaria",
+          "m": 7,
+          "goluri": 7,
+          "pase": 5
+        },
+        {
+          "jucator": "Ianis Zicu",
+          "echipa": "România",
+          "m": 21,
+          "goluri": 5,
+          "pase": 7
+        },
+        {
+          "jucator": "Mihai Dina",
+          "echipa": "România",
+          "m": 6,
+          "goluri": 9,
+          "pase": 2
+        },
+        {
+          "jucator": "Filipe Teixeira",
+          "echipa": "Franța",
+          "m": 8,
+          "goluri": 8,
+          "pase": 3
+        },
+        {
+          "jucator": "Kehinde Fatai",
+          "echipa": "România",
+          "m": 11,
+          "goluri": 7,
+          "pase": 4
+        },
+        {
+          "jucator": "Fernando Boldrin",
+          "echipa": "Portugalia",
+          "m": 7,
+          "goluri": 6,
+          "pase": 5
+        },
+        {
+          "jucator": "Cristian Tănase",
+          "echipa": "România",
+          "m": 4,
+          "goluri": 5,
+          "pase": 6
+        },
+        {
+          "jucator": "Adrian Popa",
+          "echipa": "România",
+          "m": 10,
+          "goluri": 5,
+          "pase": 6
+        },
+        {
+          "jucator": "William Amorim",
+          "echipa": "România",
+          "m": 11,
+          "goluri": 5,
+          "pase": 6
+        },
+        {
+          "jucator": "Alexandru Chipciu",
+          "echipa": "România",
+          "m": 3,
+          "goluri": 3,
+          "pase": 8
+        }
+      ]
     },
     "2013/14": {
       "clasament": [
@@ -22038,7 +24162,184 @@
             "marcatori": []
           }
         ]
-      }
+      },
+      "statistici_jucatori": [
+        {
+          "jucator": "Constantin Budescu",
+          "echipa": "România",
+          "m": 14,
+          "goluri": 13,
+          "pase": 11
+        },
+        {
+          "jucator": "Eric",
+          "echipa": "România",
+          "m": 6,
+          "goluri": 11,
+          "pase": 9
+        },
+        {
+          "jucator": "Liviu Antal",
+          "echipa": "România",
+          "m": 12,
+          "goluri": 15,
+          "pase": 3
+        },
+        {
+          "jucator": "Adrian Popa",
+          "echipa": "România",
+          "m": 5,
+          "goluri": 7,
+          "pase": 10
+        },
+        {
+          "jucator": "Valentin Lemnaru",
+          "echipa": "România",
+          "m": 8,
+          "goluri": 13,
+          "pase": 2
+        },
+        {
+          "jucator": "Alex Gonçalves",
+          "echipa": "Brazilia",
+          "m": 6,
+          "goluri": 11,
+          "pase": 3
+        },
+        {
+          "jucator": "Juan Albín",
+          "echipa": "Spania",
+          "m": 14,
+          "goluri": 10,
+          "pase": 4
+        },
+        {
+          "jucator": "Federico Piovaccari",
+          "echipa": "Italia",
+          "m": 9,
+          "goluri": 10,
+          "pase": 4
+        },
+        {
+          "jucator": "Filipe Teixeira",
+          "echipa": "Franța",
+          "m": 13,
+          "goluri": 7,
+          "pase": 7
+        },
+        {
+          "jucator": "Wellington",
+          "echipa": "Brazilia",
+          "m": 13,
+          "goluri": 10,
+          "pase": 3
+        },
+        {
+          "jucator": "Dorin Rotariu",
+          "echipa": "România",
+          "m": 13,
+          "goluri": 7,
+          "pase": 6
+        },
+        {
+          "jucator": "Szabolcs Szekely",
+          "echipa": "România",
+          "m": 13,
+          "goluri": 11,
+          "pase": 1
+        },
+        {
+          "jucator": "Marquinhos Carioca",
+          "echipa": "Brazilia",
+          "m": 15,
+          "goluri": 10,
+          "pase": 2
+        },
+        {
+          "jucator": "Claudiu Keșerü",
+          "echipa": "România",
+          "m": 4,
+          "goluri": 8,
+          "pase": 4
+        },
+        {
+          "jucator": "Andrei Cristea",
+          "echipa": "România",
+          "m": 16,
+          "goluri": 8,
+          "pase": 4
+        },
+        {
+          "jucator": "Attila Hadnagy",
+          "echipa": "Ungaria",
+          "m": 21,
+          "goluri": 8,
+          "pase": 4
+        },
+        {
+          "jucator": "Cosmin Matei",
+          "echipa": "România",
+          "m": 13,
+          "goluri": 8,
+          "pase": 4
+        },
+        {
+          "jucator": "Marian Cristescu",
+          "echipa": "România",
+          "m": 7,
+          "goluri": 7,
+          "pase": 5
+        },
+        {
+          "jucator": "George Țucudean",
+          "echipa": "România",
+          "m": 8,
+          "goluri": 7,
+          "pase": 5
+        },
+        {
+          "jucator": "Valentin Lazăr",
+          "echipa": "România",
+          "m": 5,
+          "goluri": 4,
+          "pase": 8
+        },
+        {
+          "jucator": "Bojan Golubovic",
+          "echipa": "Bosnia-Herzegovina",
+          "m": 2,
+          "goluri": 10,
+          "pase": 1
+        },
+        {
+          "jucator": "Sergiu Buș",
+          "echipa": "România",
+          "m": 7,
+          "goluri": 9,
+          "pase": 2
+        },
+        {
+          "jucator": "Henrique",
+          "echipa": "Brazilia",
+          "m": 3,
+          "goluri": 8,
+          "pase": 3
+        },
+        {
+          "jucator": "Alexandru Chipciu",
+          "echipa": "România",
+          "m": 5,
+          "goluri": 6,
+          "pase": 5
+        },
+        {
+          "jucator": "William Amorim",
+          "echipa": "România",
+          "m": 11,
+          "goluri": 4,
+          "pase": 7
+        }
+      ]
     },
     "2012/13": {
       "clasament": [
@@ -24254,7 +26555,184 @@
             "marcatori": []
           }
         ]
-      }
+      },
+      "statistici_jucatori": [
+        {
+          "jucator": "Raul Rusescu",
+          "echipa": "România",
+          "m": 16,
+          "goluri": 21,
+          "pase": 8
+        },
+        {
+          "jucator": "Jeremy Bokila",
+          "echipa": "Olanda",
+          "m": 7,
+          "goluri": 16,
+          "pase": 6
+        },
+        {
+          "jucator": "Kehinde Fatai",
+          "echipa": "România",
+          "m": 18,
+          "goluri": 14,
+          "pase": 5
+        },
+        {
+          "jucator": "Constantin Budescu",
+          "echipa": "România",
+          "m": 12,
+          "goluri": 12,
+          "pase": 7
+        },
+        {
+          "jucator": "Marius Alexe",
+          "echipa": "România",
+          "m": 11,
+          "goluri": 15,
+          "pase": 2
+        },
+        {
+          "jucator": "Paul Batin",
+          "echipa": "România",
+          "m": 10,
+          "goluri": 8,
+          "pase": 9
+        },
+        {
+          "jucator": "Cristian Tănase",
+          "echipa": "România",
+          "m": 12,
+          "goluri": 7,
+          "pase": 10
+        },
+        {
+          "jucator": "Mugurel Buga",
+          "echipa": "România",
+          "m": 12,
+          "goluri": 11,
+          "pase": 5
+        },
+        {
+          "jucator": "Deivydas Matulevičius",
+          "echipa": "Lituania",
+          "m": 10,
+          "goluri": 10,
+          "pase": 6
+        },
+        {
+          "jucator": "Alexandru Chipciu",
+          "echipa": "România",
+          "m": 11,
+          "goluri": 6,
+          "pase": 10
+        },
+        {
+          "jucator": "Hamza Younes",
+          "echipa": "Tunisia",
+          "m": 9,
+          "goluri": 13,
+          "pase": 2
+        },
+        {
+          "jucator": "Dan Nistor",
+          "echipa": "România",
+          "m": 4,
+          "goluri": 6,
+          "pase": 9
+        },
+        {
+          "jucator": "Liviu Antal",
+          "echipa": "România",
+          "m": 11,
+          "goluri": 5,
+          "pase": 10
+        },
+        {
+          "jucator": "Marian Constantinescu",
+          "echipa": "România",
+          "m": 14,
+          "goluri": 4,
+          "pase": 11
+        },
+        {
+          "jucator": "Thaer Bawab",
+          "echipa": "Spania",
+          "m": 7,
+          "goluri": 10,
+          "pase": 4
+        },
+        {
+          "jucator": "Victoraș Astafei",
+          "echipa": "România",
+          "m": 5,
+          "goluri": 10,
+          "pase": 4
+        },
+        {
+          "jucator": "Aurelian Chițu",
+          "echipa": "România",
+          "m": 6,
+          "goluri": 8,
+          "pase": 6
+        },
+        {
+          "jucator": "Adrian Popa",
+          "echipa": "România",
+          "m": 4,
+          "goluri": 4,
+          "pase": 10
+        },
+        {
+          "jucator": "Marius Niculae",
+          "echipa": "România",
+          "m": 3,
+          "goluri": 11,
+          "pase": 2
+        },
+        {
+          "jucator": "Bojan Golubovic",
+          "echipa": "Bosnia-Herzegovina",
+          "m": 4,
+          "goluri": 11,
+          "pase": 2
+        },
+        {
+          "jucator": "Nicolae Dică",
+          "echipa": "România",
+          "m": 17,
+          "goluri": 10,
+          "pase": 3
+        },
+        {
+          "jucator": "Adi",
+          "echipa": "Brazilia",
+          "m": 5,
+          "goluri": 9,
+          "pase": 4
+        },
+        {
+          "jucator": "Júnior Morais",
+          "echipa": "România",
+          "m": 2,
+          "goluri": 3,
+          "pase": 10
+        },
+        {
+          "jucator": "Gheorghe Grozav",
+          "echipa": "România",
+          "m": 15,
+          "goluri": 9,
+          "pase": 3
+        },
+        {
+          "jucator": "Gabriel Iancu",
+          "echipa": "România",
+          "m": 14,
+          "goluri": 8,
+          "pase": 4
+        }
+      ]
     },
     "2011/12": {
       "clasament": [
@@ -26470,7 +28948,184 @@
             "marcatori": []
           }
         ]
-      }
+      },
+      "statistici_jucatori": [
+        {
+          "jucator": "Wesley",
+          "echipa": "Brazilia",
+          "m": 5,
+          "goluri": 27,
+          "pase": 5
+        },
+        {
+          "jucator": "Marius Niculae",
+          "echipa": "România",
+          "m": 4,
+          "goluri": 19,
+          "pase": 6
+        },
+        {
+          "jucator": "Modou Sougou",
+          "echipa": "Portugalia",
+          "m": 8,
+          "goluri": 10,
+          "pase": 15
+        },
+        {
+          "jucator": "Daniel Oprița",
+          "echipa": "România",
+          "m": 8,
+          "goluri": 11,
+          "pase": 7
+        },
+        {
+          "jucator": "Ionel Dănciulescu",
+          "echipa": "România",
+          "m": 16,
+          "goluri": 13,
+          "pase": 4
+        },
+        {
+          "jucator": "Ciprian Deac",
+          "echipa": "România",
+          "m": 7,
+          "goluri": 9,
+          "pase": 7
+        },
+        {
+          "jucator": "Raul Rusescu",
+          "echipa": "România",
+          "m": 16,
+          "goluri": 13,
+          "pase": 2
+        },
+        {
+          "jucator": "Pantelis Kapetanos",
+          "echipa": "Grecia",
+          "m": 9,
+          "goluri": 12,
+          "pase": 2
+        },
+        {
+          "jucator": "Adrian Cristea",
+          "echipa": "România",
+          "m": 7,
+          "goluri": 8,
+          "pase": 6
+        },
+        {
+          "jucator": "Adaílton",
+          "echipa": "Italia",
+          "m": 7,
+          "goluri": 6,
+          "pase": 8
+        },
+        {
+          "jucator": "Ciprian Petre",
+          "echipa": "România",
+          "m": 9,
+          "goluri": 3,
+          "pase": 11
+        },
+        {
+          "jucator": "Ovidiu Herea",
+          "echipa": "România",
+          "m": 10,
+          "goluri": 12,
+          "pase": 1
+        },
+        {
+          "jucator": "Hamza Younes",
+          "echipa": "Tunisia",
+          "m": 5,
+          "goluri": 12,
+          "pase": 1
+        },
+        {
+          "jucator": "Valentin Lemnaru",
+          "echipa": "România",
+          "m": 12,
+          "goluri": 8,
+          "pase": 5
+        },
+        {
+          "jucator": "Mihai Costea",
+          "echipa": "România",
+          "m": 8,
+          "goluri": 7,
+          "pase": 6
+        },
+        {
+          "jucator": "Viorel Ferfelea",
+          "echipa": "România",
+          "m": 5,
+          "goluri": 5,
+          "pase": 8
+        },
+        {
+          "jucator": "Bojan Golubovic",
+          "echipa": "Bosnia-Herzegovina",
+          "m": 2,
+          "goluri": 10,
+          "pase": 2
+        },
+        {
+          "jucator": "Mike Temwanjera",
+          "echipa": "Zimbabwe",
+          "m": 18,
+          "goluri": 7,
+          "pase": 5
+        },
+        {
+          "jucator": "Damien Boudjemaa",
+          "echipa": "Algeria",
+          "m": 4,
+          "goluri": 3,
+          "pase": 9
+        },
+        {
+          "jucator": "Adrian Popa",
+          "echipa": "România",
+          "m": 1,
+          "goluri": 3,
+          "pase": 9
+        },
+        {
+          "jucator": "Lucian Sânmărtean",
+          "echipa": "România",
+          "m": 9,
+          "goluri": 2,
+          "pase": 10
+        },
+        {
+          "jucator": "Cătălin Munteanu",
+          "echipa": "România",
+          "m": 9,
+          "goluri": 2,
+          "pase": 10
+        },
+        {
+          "jucator": "Thaer Bawab",
+          "echipa": "Spania",
+          "m": 7,
+          "goluri": 8,
+          "pase": 3
+        },
+        {
+          "jucator": "Alexandru Chipciu",
+          "echipa": "România",
+          "m": 5,
+          "goluri": 7,
+          "pase": 4
+        },
+        {
+          "jucator": "Anthony Nwakaeme",
+          "echipa": "Nigeria",
+          "m": 9,
+          "goluri": 7,
+          "pase": 4
+        }
+      ]
     },
     "2010/11": {
       "clasament": [
@@ -28692,7 +31347,184 @@
             "marcatori": []
           }
         ]
-      }
+      },
+      "statistici_jucatori": [
+        {
+          "jucator": "Eric",
+          "echipa": "România",
+          "m": 11,
+          "goluri": 15,
+          "pase": 9
+        },
+        {
+          "jucator": "Ianis Zicu",
+          "echipa": "România",
+          "m": 5,
+          "goluri": 18,
+          "pase": 4
+        },
+        {
+          "jucator": "Adaílton",
+          "echipa": "Italia",
+          "m": 16,
+          "goluri": 11,
+          "pase": 10
+        },
+        {
+          "jucator": "Gabriel Torje",
+          "echipa": "România",
+          "m": 7,
+          "goluri": 9,
+          "pase": 8
+        },
+        {
+          "jucator": "Claudiu Niculescu",
+          "echipa": "România",
+          "m": 15,
+          "goluri": 13,
+          "pase": 3
+        },
+        {
+          "jucator": "Bogdan Stancu",
+          "echipa": "România",
+          "m": 4,
+          "goluri": 13,
+          "pase": 3
+        },
+        {
+          "jucator": "Tiberiu Bălan",
+          "echipa": "România",
+          "m": 10,
+          "goluri": 12,
+          "pase": 3
+        },
+        {
+          "jucator": "Ovidiu Herea",
+          "echipa": "România",
+          "m": 13,
+          "goluri": 11,
+          "pase": 4
+        },
+        {
+          "jucator": "Liviu Ganea",
+          "echipa": "România",
+          "m": 13,
+          "goluri": 8,
+          "pase": 6
+        },
+        {
+          "jucator": "Wesley",
+          "echipa": "Brazilia",
+          "m": 5,
+          "goluri": 13,
+          "pase": 0
+        },
+        {
+          "jucator": "Lucian Sânmărtean",
+          "echipa": "România",
+          "m": 6,
+          "goluri": 2,
+          "pase": 11
+        },
+        {
+          "jucator": "Costin Curelea",
+          "echipa": "România",
+          "m": 2,
+          "goluri": 9,
+          "pase": 3
+        },
+        {
+          "jucator": "Lukas Magera",
+          "echipa": "Cehia",
+          "m": 6,
+          "goluri": 7,
+          "pase": 5
+        },
+        {
+          "jucator": "Adrian Cristea",
+          "echipa": "România",
+          "m": 9,
+          "goluri": 10,
+          "pase": 1
+        },
+        {
+          "jucator": "Vasile Olariu",
+          "echipa": "România",
+          "m": 0,
+          "goluri": 9,
+          "pase": 2
+        },
+        {
+          "jucator": "Dorin Goga",
+          "echipa": "România",
+          "m": 16,
+          "goluri": 8,
+          "pase": 3
+        },
+        {
+          "jucator": "Dacian Varga",
+          "echipa": "România",
+          "m": 3,
+          "goluri": 6,
+          "pase": 5
+        },
+        {
+          "jucator": "Florin Dan",
+          "echipa": "România",
+          "m": 9,
+          "goluri": 5,
+          "pase": 6
+        },
+        {
+          "jucator": "Júnior Moraes",
+          "echipa": "Brazilia",
+          "m": 2,
+          "goluri": 8,
+          "pase": 2
+        },
+        {
+          "jucator": "Lacina Traoré",
+          "echipa": "Cote d'Ivoire",
+          "m": 8,
+          "goluri": 7,
+          "pase": 3
+        },
+        {
+          "jucator": "Liviu Antal",
+          "echipa": "România",
+          "m": 13,
+          "goluri": 7,
+          "pase": 3
+        },
+        {
+          "jucator": "Gabriel Paraschiv",
+          "echipa": "România",
+          "m": 11,
+          "goluri": 6,
+          "pase": 4
+        },
+        {
+          "jucator": "Marius Alexe",
+          "echipa": "România",
+          "m": 5,
+          "goluri": 5,
+          "pase": 5
+        },
+        {
+          "jucator": "Robert Ilyés",
+          "echipa": "Ungaria",
+          "m": 6,
+          "goluri": 9,
+          "pase": 0
+        },
+        {
+          "jucator": "Marius Pena",
+          "echipa": "România",
+          "m": 9,
+          "goluri": 8,
+          "pase": 1
+        }
+      ]
     },
     "2009/10": {
       "clasament": [
@@ -30908,7 +33740,184 @@
             "marcatori": []
           }
         ]
-      }
+      },
+      "statistici_jucatori": [
+        {
+          "jucator": "Andrei Cristea",
+          "echipa": "România",
+          "m": 11,
+          "goluri": 16,
+          "pase": 5
+        },
+        {
+          "jucator": "Pantelis Kapetanos",
+          "echipa": "Grecia",
+          "m": 5,
+          "goluri": 15,
+          "pase": 5
+        },
+        {
+          "jucator": "Alexandru Ioniță I",
+          "echipa": "România",
+          "m": 14,
+          "goluri": 10,
+          "pase": 8
+        },
+        {
+          "jucator": "Wesley",
+          "echipa": "Brazilia",
+          "m": 5,
+          "goluri": 12,
+          "pase": 5
+        },
+        {
+          "jucator": "Dorin Goga",
+          "echipa": "România",
+          "m": 6,
+          "goluri": 12,
+          "pase": 4
+        },
+        {
+          "jucator": "Marius Bilașco",
+          "echipa": "România",
+          "m": 11,
+          "goluri": 12,
+          "pase": 2
+        },
+        {
+          "jucator": "Liviu Ganea",
+          "echipa": "România",
+          "m": 10,
+          "goluri": 11,
+          "pase": 1
+        },
+        {
+          "jucator": "Júnior Moraes",
+          "echipa": "Brazilia",
+          "m": 2,
+          "goluri": 10,
+          "pase": 2
+        },
+        {
+          "jucator": "Cristian Bud",
+          "echipa": "România",
+          "m": 7,
+          "goluri": 10,
+          "pase": 2
+        },
+        {
+          "jucator": "Bogdan Stancu",
+          "echipa": "România",
+          "m": 13,
+          "goluri": 8,
+          "pase": 4
+        },
+        {
+          "jucator": "János Székely",
+          "echipa": "România",
+          "m": 12,
+          "goluri": 5,
+          "pase": 7
+        },
+        {
+          "jucator": "Florin Costea",
+          "echipa": "România",
+          "m": 6,
+          "goluri": 9,
+          "pase": 2
+        },
+        {
+          "jucator": "Eric",
+          "echipa": "România",
+          "m": 13,
+          "goluri": 8,
+          "pase": 3
+        },
+        {
+          "jucator": "Arman Karamyan",
+          "echipa": "România",
+          "m": 8,
+          "goluri": 7,
+          "pase": 4
+        },
+        {
+          "jucator": "Romeo Surdu",
+          "echipa": "România",
+          "m": 7,
+          "goluri": 5,
+          "pase": 6
+        },
+        {
+          "jucator": "Willian",
+          "echipa": "Brazilia",
+          "m": 15,
+          "goluri": 4,
+          "pase": 7
+        },
+        {
+          "jucator": "Lukas Magera",
+          "echipa": "Cehia",
+          "m": 5,
+          "goluri": 9,
+          "pase": 1
+        },
+        {
+          "jucator": "Ovidiu Herea",
+          "echipa": "România",
+          "m": 15,
+          "goluri": 8,
+          "pase": 2
+        },
+        {
+          "jucator": "Marius Onofraș",
+          "echipa": "România",
+          "m": 12,
+          "goluri": 8,
+          "pase": 2
+        },
+        {
+          "jucator": "Juliano Spadacio",
+          "echipa": "Italia",
+          "m": 6,
+          "goluri": 3,
+          "pase": 7
+        },
+        {
+          "jucator": "Mihai Roman",
+          "echipa": "România",
+          "m": 6,
+          "goluri": 3,
+          "pase": 7
+        },
+        {
+          "jucator": "Gigel Bucur",
+          "echipa": "România",
+          "m": 5,
+          "goluri": 8,
+          "pase": 1
+        },
+        {
+          "jucator": "Raul Rusescu",
+          "echipa": "România",
+          "m": 7,
+          "goluri": 8,
+          "pase": 1
+        },
+        {
+          "jucator": "Florin Dan",
+          "echipa": "România",
+          "m": 10,
+          "goluri": 7,
+          "pase": 2
+        },
+        {
+          "jucator": "Mihai Costea",
+          "echipa": "România",
+          "m": 11,
+          "goluri": 7,
+          "pase": 2
+        }
+      ]
     },
     "2008/09": {
       "clasament": [
@@ -33124,7 +36133,184 @@
             "marcatori": []
           }
         ]
-      }
+      },
+      "statistici_jucatori": [
+        {
+          "jucator": "Florin Costea",
+          "echipa": "România",
+          "m": 13,
+          "goluri": 17,
+          "pase": 6
+        },
+        {
+          "jucator": "Gigel Bucur",
+          "echipa": "România",
+          "m": 17,
+          "goluri": 17,
+          "pase": 3
+        },
+        {
+          "jucator": "Juliano Spadacio",
+          "echipa": "Italia",
+          "m": 8,
+          "goluri": 16,
+          "pase": 3
+        },
+        {
+          "jucator": "Marius Niculae",
+          "echipa": "România",
+          "m": 7,
+          "goluri": 12,
+          "pase": 4
+        },
+        {
+          "jucator": "Ionel Dănciulescu",
+          "echipa": "România",
+          "m": 7,
+          "goluri": 12,
+          "pase": 4
+        },
+        {
+          "jucator": "Andrei Cristea",
+          "echipa": "România",
+          "m": 2,
+          "goluri": 9,
+          "pase": 6
+        },
+        {
+          "jucator": "Pantelis Kapetanos",
+          "echipa": "Grecia",
+          "m": 9,
+          "goluri": 11,
+          "pase": 3
+        },
+        {
+          "jucator": "Gabriel Paraschiv",
+          "echipa": "România",
+          "m": 3,
+          "goluri": 9,
+          "pase": 5
+        },
+        {
+          "jucator": "Mike Temwanjera",
+          "echipa": "Zimbabwe",
+          "m": 14,
+          "goluri": 9,
+          "pase": 4
+        },
+        {
+          "jucator": "Romeo Surdu",
+          "echipa": "România",
+          "m": 11,
+          "goluri": 8,
+          "pase": 4
+        },
+        {
+          "jucator": "Iulian Tameș",
+          "echipa": "România",
+          "m": 4,
+          "goluri": 7,
+          "pase": 5
+        },
+        {
+          "jucator": "Artavazd Karamyan",
+          "echipa": "România",
+          "m": 16,
+          "goluri": 7,
+          "pase": 5
+        },
+        {
+          "jucator": "Bogdan Stancu",
+          "echipa": "România",
+          "m": 11,
+          "goluri": 11,
+          "pase": 0
+        },
+        {
+          "jucator": "Yssouf Koné",
+          "echipa": "Cote d'Ivoire",
+          "m": 6,
+          "goluri": 10,
+          "pase": 1
+        },
+        {
+          "jucator": "Alexandru Curtean",
+          "echipa": "România",
+          "m": 6,
+          "goluri": 8,
+          "pase": 3
+        },
+        {
+          "jucator": "Bogdan Mara",
+          "echipa": "România",
+          "m": 10,
+          "goluri": 7,
+          "pase": 4
+        },
+        {
+          "jucator": "Emmanuel Culio",
+          "echipa": "Italia",
+          "m": 9,
+          "goluri": 1,
+          "pase": 10
+        },
+        {
+          "jucator": "Chico",
+          "echipa": "Portugalia",
+          "m": 8,
+          "goluri": 8,
+          "pase": 2
+        },
+        {
+          "jucator": "Marius Onofraș",
+          "echipa": "România",
+          "m": 8,
+          "goluri": 8,
+          "pase": 2
+        },
+        {
+          "jucator": "Cristian Coroian",
+          "echipa": "România",
+          "m": 3,
+          "goluri": 7,
+          "pase": 3
+        },
+        {
+          "jucator": "Lucian Burdujan",
+          "echipa": "România",
+          "m": 13,
+          "goluri": 6,
+          "pase": 4
+        },
+        {
+          "jucator": "Marius Bilașco",
+          "echipa": "România",
+          "m": 10,
+          "goluri": 8,
+          "pase": 1
+        },
+        {
+          "jucator": "Adrian Dulcea",
+          "echipa": "România",
+          "m": 17,
+          "goluri": 7,
+          "pase": 2
+        },
+        {
+          "jucator": "Dayro Moreno",
+          "echipa": "Columbia",
+          "m": 13,
+          "goluri": 5,
+          "pase": 4
+        },
+        {
+          "jucator": "Alexandru Pițurcă",
+          "echipa": "România",
+          "m": 8,
+          "goluri": 4,
+          "pase": 5
+        }
+      ]
     },
     "2007/08": {
       "clasament": [
@@ -35340,7 +38526,184 @@
             "marcatori": []
           }
         ]
-      }
+      },
+      "statistici_jucatori": [
+        {
+          "jucator": "Ionel Dănciulescu",
+          "echipa": "România",
+          "m": 6,
+          "goluri": 21,
+          "pase": 0
+        },
+        {
+          "jucator": "Florin Costea",
+          "echipa": "România",
+          "m": 11,
+          "goluri": 15,
+          "pase": 4
+        },
+        {
+          "jucator": "Emil Jula",
+          "echipa": "România",
+          "m": 11,
+          "goluri": 17,
+          "pase": 0
+        },
+        {
+          "jucator": "Gigel Bucur",
+          "echipa": "România",
+          "m": 12,
+          "goluri": 16,
+          "pase": 1
+        },
+        {
+          "jucator": "Marko Ljubinkovic",
+          "echipa": "Serbia",
+          "m": 5,
+          "goluri": 16,
+          "pase": 0
+        },
+        {
+          "jucator": "Nicolae Dică",
+          "echipa": "România",
+          "m": 3,
+          "goluri": 9,
+          "pase": 7
+        },
+        {
+          "jucator": "Florin Bratu",
+          "echipa": "România",
+          "m": 7,
+          "goluri": 14,
+          "pase": 1
+        },
+        {
+          "jucator": "Eugen Trică",
+          "echipa": "România",
+          "m": 19,
+          "goluri": 13,
+          "pase": 0
+        },
+        {
+          "jucator": "Cristian Fabbiani",
+          "echipa": "Italia",
+          "m": 5,
+          "goluri": 11,
+          "pase": 0
+        },
+        {
+          "jucator": "Cristian Coroian",
+          "echipa": "România",
+          "m": 4,
+          "goluri": 11,
+          "pase": 0
+        },
+        {
+          "jucator": "Julius Wobay",
+          "echipa": "Sierra Leone",
+          "m": 9,
+          "goluri": 4,
+          "pase": 6
+        },
+        {
+          "jucator": "Bănel Nicoliță",
+          "echipa": "România",
+          "m": 11,
+          "goluri": 3,
+          "pase": 7
+        },
+        {
+          "jucator": "Ionuț Mazilu",
+          "echipa": "România",
+          "m": 1,
+          "goluri": 9,
+          "pase": 0
+        },
+        {
+          "jucator": "Cristian Dănălache",
+          "echipa": "România",
+          "m": 6,
+          "goluri": 9,
+          "pase": 0
+        },
+        {
+          "jucator": "Mihai Dina",
+          "echipa": "România",
+          "m": 13,
+          "goluri": 7,
+          "pase": 2
+        },
+        {
+          "jucator": "Adrian Cristea",
+          "echipa": "România",
+          "m": 11,
+          "goluri": 8,
+          "pase": 0
+        },
+        {
+          "jucator": "Ionuț Bâlbă",
+          "echipa": "România",
+          "m": 12,
+          "goluri": 8,
+          "pase": 0
+        },
+        {
+          "jucator": "Dorin Goga",
+          "echipa": "România",
+          "m": 3,
+          "goluri": 8,
+          "pase": 0
+        },
+        {
+          "jucator": "Claudiu Ionescu",
+          "echipa": "România",
+          "m": 7,
+          "goluri": 8,
+          "pase": 0
+        },
+        {
+          "jucator": "Dejan Rusmir",
+          "echipa": "Serbia",
+          "m": 6,
+          "goluri": 7,
+          "pase": 1
+        },
+        {
+          "jucator": "Pierre Boya",
+          "echipa": "Camerun",
+          "m": 4,
+          "goluri": 7,
+          "pase": 0
+        },
+        {
+          "jucator": "Didi",
+          "echipa": "Brazilia",
+          "m": 6,
+          "goluri": 7,
+          "pase": 0
+        },
+        {
+          "jucator": "Andrei Cristea",
+          "echipa": "România",
+          "m": 3,
+          "goluri": 6,
+          "pase": 1
+        },
+        {
+          "jucator": "Andrés Mendoza",
+          "echipa": "Belgia",
+          "m": 6,
+          "goluri": 2,
+          "pase": 5
+        },
+        {
+          "jucator": "Ovidiu Petre",
+          "echipa": "România",
+          "m": 4,
+          "goluri": 2,
+          "pase": 5
+        }
+      ]
     },
     "2006/07": {
       "clasament": [
@@ -37556,7 +40919,184 @@
             "marcatori": []
           }
         ]
-      }
+      },
+      "statistici_jucatori": [
+        {
+          "jucator": "Claudiu Niculescu",
+          "echipa": "România",
+          "m": 10,
+          "goluri": 18,
+          "pase": 0
+        },
+        {
+          "jucator": "Valentin Badea",
+          "echipa": "România",
+          "m": 5,
+          "goluri": 13,
+          "pase": 4
+        },
+        {
+          "jucator": "Ionel Ganea",
+          "echipa": "România",
+          "m": 10,
+          "goluri": 16,
+          "pase": 0
+        },
+        {
+          "jucator": "Ionel Dănciulescu",
+          "echipa": "România",
+          "m": 7,
+          "goluri": 15,
+          "pase": 0
+        },
+        {
+          "jucator": "Nicolae Dică",
+          "echipa": "România",
+          "m": 2,
+          "goluri": 10,
+          "pase": 5
+        },
+        {
+          "jucator": "Emil Jula",
+          "echipa": "România",
+          "m": 9,
+          "goluri": 14,
+          "pase": 0
+        },
+        {
+          "jucator": "Vasilică Cristocea",
+          "echipa": "România",
+          "m": 17,
+          "goluri": 4,
+          "pase": 9
+        },
+        {
+          "jucator": "Ianis Zicu",
+          "echipa": "România",
+          "m": 12,
+          "goluri": 12,
+          "pase": 0
+        },
+        {
+          "jucator": "Cristian Coroian",
+          "echipa": "România",
+          "m": 8,
+          "goluri": 11,
+          "pase": 0
+        },
+        {
+          "jucator": "Dorel Zaharia",
+          "echipa": "România",
+          "m": 2,
+          "goluri": 11,
+          "pase": 0
+        },
+        {
+          "jucator": "Daniel Stan",
+          "echipa": "România",
+          "m": 14,
+          "goluri": 11,
+          "pase": 0
+        },
+        {
+          "jucator": "Cyril Théreau",
+          "echipa": "Franța",
+          "m": 7,
+          "goluri": 10,
+          "pase": 1
+        },
+        {
+          "jucator": "Romeo Surdu",
+          "echipa": "România",
+          "m": 14,
+          "goluri": 10,
+          "pase": 0
+        },
+        {
+          "jucator": "Viorel Frunza",
+          "echipa": "Moldova",
+          "m": 5,
+          "goluri": 10,
+          "pase": 0
+        },
+        {
+          "jucator": "Ionuț Mazilu",
+          "echipa": "România",
+          "m": 5,
+          "goluri": 9,
+          "pase": 0
+        },
+        {
+          "jucator": "Gigel Bucur",
+          "echipa": "România",
+          "m": 13,
+          "goluri": 9,
+          "pase": 0
+        },
+        {
+          "jucator": "Daniel Oprița",
+          "echipa": "România",
+          "m": 7,
+          "goluri": 5,
+          "pase": 4
+        },
+        {
+          "jucator": "Gabriel Mureșan",
+          "echipa": "România",
+          "m": 1,
+          "goluri": 8,
+          "pase": 0
+        },
+        {
+          "jucator": "Ionuț Bâlbă",
+          "echipa": "România",
+          "m": 10,
+          "goluri": 8,
+          "pase": 0
+        },
+        {
+          "jucator": "Bogdan Mara",
+          "echipa": "România",
+          "m": 8,
+          "goluri": 8,
+          "pase": 0
+        },
+        {
+          "jucator": "António Semedo",
+          "echipa": "Cape Verde",
+          "m": 4,
+          "goluri": 7,
+          "pase": 1
+        },
+        {
+          "jucator": "Viorel Moldovan",
+          "echipa": "România",
+          "m": 12,
+          "goluri": 7,
+          "pase": 0
+        },
+        {
+          "jucator": "Mircea Ilie",
+          "echipa": "România",
+          "m": 9,
+          "goluri": 7,
+          "pase": 0
+        },
+        {
+          "jucator": "Valentin Bădoi",
+          "echipa": "România",
+          "m": 1,
+          "goluri": 7,
+          "pase": 0
+        },
+        {
+          "jucator": "Adrian Gheorghiu",
+          "echipa": "România",
+          "m": 10,
+          "goluri": 7,
+          "pase": 0
+        }
+      ]
     },
     "2005/06": {
       "clasament": [
@@ -39334,7 +42874,184 @@
             "marcatori": []
           }
         ]
-      }
+      },
+      "statistici_jucatori": [
+        {
+          "jucator": "Ionuț Mazilu",
+          "echipa": "România",
+          "m": 4,
+          "goluri": 22,
+          "pase": 1
+        },
+        {
+          "jucator": "Nicolae Dică",
+          "echipa": "România",
+          "m": 12,
+          "goluri": 15,
+          "pase": 0
+        },
+        {
+          "jucator": "Viorel Moldovan",
+          "echipa": "România",
+          "m": 12,
+          "goluri": 14,
+          "pase": 1
+        },
+        {
+          "jucator": "Claudiu Niculescu",
+          "echipa": "România",
+          "m": 5,
+          "goluri": 12,
+          "pase": 0
+        },
+        {
+          "jucator": "Tiberiu Bălan",
+          "echipa": "România",
+          "m": 7,
+          "goluri": 12,
+          "pase": 0
+        },
+        {
+          "jucator": "Ciprian Tănasă",
+          "echipa": "România",
+          "m": 10,
+          "goluri": 11,
+          "pase": 0
+        },
+        {
+          "jucator": "Ștefan Grigorie",
+          "echipa": "România",
+          "m": 3,
+          "goluri": 10,
+          "pase": 0
+        },
+        {
+          "jucator": "Alexandru Baltoi",
+          "echipa": "România",
+          "m": 3,
+          "goluri": 10,
+          "pase": 0
+        },
+        {
+          "jucator": "Ianis Zicu",
+          "echipa": "România",
+          "m": 10,
+          "goluri": 9,
+          "pase": 0
+        },
+        {
+          "jucator": "Ionuț Bâlbă",
+          "echipa": "România",
+          "m": 14,
+          "goluri": 9,
+          "pase": 0
+        },
+        {
+          "jucator": "Daniel Niculae",
+          "echipa": "România",
+          "m": 6,
+          "goluri": 8,
+          "pase": 0
+        },
+        {
+          "jucator": "Bănel Nicoliță",
+          "echipa": "România",
+          "m": 8,
+          "goluri": 7,
+          "pase": 0
+        },
+        {
+          "jucator": "Mugurel Buga",
+          "echipa": "România",
+          "m": 15,
+          "goluri": 7,
+          "pase": 0
+        },
+        {
+          "jucator": "Ryan Griffiths",
+          "echipa": "Australia",
+          "m": 4,
+          "goluri": 7,
+          "pase": 0
+        },
+        {
+          "jucator": "Tibor Moldovan",
+          "echipa": "România",
+          "m": 10,
+          "goluri": 7,
+          "pase": 0
+        },
+        {
+          "jucator": "Daniel Stan",
+          "echipa": "România",
+          "m": 6,
+          "goluri": 7,
+          "pase": 0
+        },
+        {
+          "jucator": "Florin Bratu",
+          "echipa": "România",
+          "m": 11,
+          "goluri": 6,
+          "pase": 0
+        },
+        {
+          "jucator": "Adrian Anca",
+          "echipa": "Ungaria",
+          "m": 10,
+          "goluri": 6,
+          "pase": 0
+        },
+        {
+          "jucator": "Cristian Coroian",
+          "echipa": "România",
+          "m": 7,
+          "goluri": 6,
+          "pase": 0
+        },
+        {
+          "jucator": "Romeo Surdu",
+          "echipa": "România",
+          "m": 16,
+          "goluri": 6,
+          "pase": 0
+        },
+        {
+          "jucator": "Cosmin Tilincă",
+          "echipa": "România",
+          "m": 11,
+          "goluri": 6,
+          "pase": 0
+        },
+        {
+          "jucator": "Mihai Guriţă",
+          "echipa": "România",
+          "m": 10,
+          "goluri": 6,
+          "pase": 0
+        },
+        {
+          "jucator": "Sandu Negrean",
+          "echipa": "România",
+          "m": 3,
+          "goluri": 6,
+          "pase": 0
+        },
+        {
+          "jucator": "Alin Paleacu",
+          "echipa": "România",
+          "m": 1,
+          "goluri": 5,
+          "pase": 1
+        },
+        {
+          "jucator": "Silviu Bălace",
+          "echipa": "România",
+          "m": 2,
+          "goluri": 5,
+          "pase": 1
+        }
+      ]
     },
     "2004/05": {
       "clasament": [
@@ -41112,7 +44829,184 @@
             "marcatori": []
           }
         ]
-      }
+      },
+      "statistici_jucatori": [
+        {
+          "jucator": "Claudiu Niculescu",
+          "echipa": "România",
+          "m": 9,
+          "goluri": 21,
+          "pase": 0
+        },
+        {
+          "jucator": "Gigel Bucur",
+          "echipa": "România",
+          "m": 10,
+          "goluri": 21,
+          "pase": 0
+        },
+        {
+          "jucator": "Daniel Niculae",
+          "echipa": "România",
+          "m": 5,
+          "goluri": 14,
+          "pase": 0
+        },
+        {
+          "jucator": "Victoraș Iacob",
+          "echipa": "România",
+          "m": 8,
+          "goluri": 13,
+          "pase": 0
+        },
+        {
+          "jucator": "Cristian Coroian",
+          "echipa": "România",
+          "m": 4,
+          "goluri": 13,
+          "pase": 0
+        },
+        {
+          "jucator": "Gabriel Caramarin",
+          "echipa": "România",
+          "m": 0,
+          "goluri": 12,
+          "pase": 0
+        },
+        {
+          "jucator": "Nicolae Dică",
+          "echipa": "România",
+          "m": 9,
+          "goluri": 11,
+          "pase": 0
+        },
+        {
+          "jucator": "Ionel Dănciulescu",
+          "echipa": "România",
+          "m": 1,
+          "goluri": 11,
+          "pase": 0
+        },
+        {
+          "jucator": "Adrian Anca",
+          "echipa": "Ungaria",
+          "m": 13,
+          "goluri": 11,
+          "pase": 0
+        },
+        {
+          "jucator": "Ștefan Grigorie",
+          "echipa": "România",
+          "m": 11,
+          "goluri": 10,
+          "pase": 0
+        },
+        {
+          "jucator": "Mihai Guriţă",
+          "echipa": "România",
+          "m": 8,
+          "goluri": 10,
+          "pase": 0
+        },
+        {
+          "jucator": "Ciprian Tănasă",
+          "echipa": "România",
+          "m": 7,
+          "goluri": 10,
+          "pase": 0
+        },
+        {
+          "jucator": "Romeo Surdu",
+          "echipa": "România",
+          "m": 10,
+          "goluri": 9,
+          "pase": 0
+        },
+        {
+          "jucator": "Sandu Negrean",
+          "echipa": "România",
+          "m": 8,
+          "goluri": 9,
+          "pase": 0
+        },
+        {
+          "jucator": "Gigel Coman",
+          "echipa": "România",
+          "m": 6,
+          "goluri": 8,
+          "pase": 0
+        },
+        {
+          "jucator": "Mihăiță Pleșan",
+          "echipa": "România",
+          "m": 2,
+          "goluri": 8,
+          "pase": 0
+        },
+        {
+          "jucator": "Robert Ilyés",
+          "echipa": "Ungaria",
+          "m": 2,
+          "goluri": 8,
+          "pase": 0
+        },
+        {
+          "jucator": "Mugurel Buga",
+          "echipa": "România",
+          "m": 8,
+          "goluri": 8,
+          "pase": 0
+        },
+        {
+          "jucator": "Lucian Burdujan",
+          "echipa": "România",
+          "m": 11,
+          "goluri": 8,
+          "pase": 0
+        },
+        {
+          "jucator": "Vasilică Cristocea",
+          "echipa": "România",
+          "m": 14,
+          "goluri": 8,
+          "pase": 0
+        },
+        {
+          "jucator": "Marius Bilașco",
+          "echipa": "România",
+          "m": 10,
+          "goluri": 8,
+          "pase": 0
+        },
+        {
+          "jucator": "Sergiu Radu",
+          "echipa": "România",
+          "m": 4,
+          "goluri": 7,
+          "pase": 0
+        },
+        {
+          "jucator": "Andrei Cristea",
+          "echipa": "România",
+          "m": 12,
+          "goluri": 7,
+          "pase": 0
+        },
+        {
+          "jucator": "Mansour Gueye",
+          "echipa": "România",
+          "m": 4,
+          "goluri": 7,
+          "pase": 0
+        },
+        {
+          "jucator": "Ionuț Mazilu",
+          "echipa": "România",
+          "m": 10,
+          "goluri": 7,
+          "pase": 0
+        }
+      ]
     },
     "2003/04": {
       "clasament": [
@@ -42890,7 +46784,184 @@
             "marcatori": []
           }
         ]
-      }
+      },
+      "statistici_jucatori": [
+        {
+          "jucator": "Ionel Dănciulescu",
+          "echipa": "România",
+          "m": 4,
+          "goluri": 21,
+          "pase": 0
+        },
+        {
+          "jucator": "Nicolae Dică",
+          "echipa": "România",
+          "m": 2,
+          "goluri": 18,
+          "pase": 0
+        },
+        {
+          "jucator": "Claudiu Niculescu",
+          "echipa": "România",
+          "m": 15,
+          "goluri": 16,
+          "pase": 0
+        },
+        {
+          "jucator": "Bogdan Vrăjitoarea",
+          "echipa": "România",
+          "m": 5,
+          "goluri": 14,
+          "pase": 0
+        },
+        {
+          "jucator": "Sabin Ilie",
+          "echipa": "România",
+          "m": 12,
+          "goluri": 13,
+          "pase": 0
+        },
+        {
+          "jucator": "Adrian Neaga",
+          "echipa": "România",
+          "m": 3,
+          "goluri": 13,
+          "pase": 0
+        },
+        {
+          "jucator": "Gabriel Caramarin",
+          "echipa": "România",
+          "m": 6,
+          "goluri": 12,
+          "pase": 0
+        },
+        {
+          "jucator": "Mugurel Buga",
+          "echipa": "România",
+          "m": 5,
+          "goluri": 12,
+          "pase": 0
+        },
+        {
+          "jucator": "Jeremie Njock",
+          "echipa": "Camerun",
+          "m": 12,
+          "goluri": 11,
+          "pase": 0
+        },
+        {
+          "jucator": "Ionuţ Savu",
+          "echipa": "România",
+          "m": 7,
+          "goluri": 9,
+          "pase": 0
+        },
+        {
+          "jucator": "Ștefan Grigorie",
+          "echipa": "România",
+          "m": 7,
+          "goluri": 8,
+          "pase": 0
+        },
+        {
+          "jucator": "Alexandru Baltoi",
+          "echipa": "România",
+          "m": 9,
+          "goluri": 8,
+          "pase": 0
+        },
+        {
+          "jucator": "Cristian Coroian",
+          "echipa": "România",
+          "m": 7,
+          "goluri": 8,
+          "pase": 0
+        },
+        {
+          "jucator": "Romeo Surdu",
+          "echipa": "România",
+          "m": 14,
+          "goluri": 8,
+          "pase": 0
+        },
+        {
+          "jucator": "Dan Găldean",
+          "echipa": "România",
+          "m": 24,
+          "goluri": 8,
+          "pase": 0
+        },
+        {
+          "jucator": "Robert Niță",
+          "echipa": "România",
+          "m": 3,
+          "goluri": 8,
+          "pase": 0
+        },
+        {
+          "jucator": "Cristian Silvășan",
+          "echipa": "România",
+          "m": 5,
+          "goluri": 7,
+          "pase": 0
+        },
+        {
+          "jucator": "Victoraș Iacob",
+          "echipa": "România",
+          "m": 4,
+          "goluri": 7,
+          "pase": 0
+        },
+        {
+          "jucator": "Lucian Burdujan",
+          "echipa": "România",
+          "m": 8,
+          "goluri": 7,
+          "pase": 0
+        },
+        {
+          "jucator": "Vasilică Cristocea",
+          "echipa": "România",
+          "m": 10,
+          "goluri": 7,
+          "pase": 0
+        },
+        {
+          "jucator": "Cătălin Cursaru",
+          "echipa": "România",
+          "m": 6,
+          "goluri": 7,
+          "pase": 0
+        },
+        {
+          "jucator": "Liviu Mihai",
+          "echipa": "România",
+          "m": 5,
+          "goluri": 7,
+          "pase": 0
+        },
+        {
+          "jucator": "Sandu Negrean",
+          "echipa": "România",
+          "m": 11,
+          "goluri": 7,
+          "pase": 0
+        },
+        {
+          "jucator": "Liviu Negoiță",
+          "echipa": "România",
+          "m": 0,
+          "goluri": 7,
+          "pase": 0
+        },
+        {
+          "jucator": "Zeno Bundea",
+          "echipa": "România",
+          "m": 5,
+          "goluri": 6,
+          "pase": 0
+        }
+      ]
     },
     "2002/03": {
       "clasament": [
@@ -45758,7 +49829,184 @@
             ]
           }
         ]
-      }
+      },
+      "statistici_jucatori": [
+        {
+          "jucator": "Florin Bratu",
+          "echipa": "România",
+          "m": 7,
+          "goluri": 6,
+          "pase": 0
+        },
+        {
+          "jucator": "Daniel Niculae",
+          "echipa": "România",
+          "m": 2,
+          "goluri": 6,
+          "pase": 0
+        },
+        {
+          "jucator": "Robert Niță",
+          "echipa": "România",
+          "m": 1,
+          "goluri": 4,
+          "pase": 0
+        },
+        {
+          "jucator": "Robert Ilyés",
+          "echipa": "Ungaria",
+          "m": 4,
+          "goluri": 3,
+          "pase": 0
+        },
+        {
+          "jucator": "Valentin Bădoi",
+          "echipa": "România",
+          "m": 7,
+          "goluri": 3,
+          "pase": 0
+        },
+        {
+          "jucator": "Claudiu Niculescu",
+          "echipa": "România",
+          "m": 0,
+          "goluri": 3,
+          "pase": 0
+        },
+        {
+          "jucator": "Cristian Ianu",
+          "echipa": "România",
+          "m": 0,
+          "goluri": 3,
+          "pase": 0
+        },
+        {
+          "jucator": "Adrian Iencsi",
+          "echipa": "România",
+          "m": 0,
+          "goluri": 3,
+          "pase": 0
+        },
+        {
+          "jucator": "Henry Makinwa",
+          "echipa": "Portugalia",
+          "m": 0,
+          "goluri": 2,
+          "pase": 0
+        },
+        {
+          "jucator": "Ionel Dănciulescu",
+          "echipa": "România",
+          "m": 1,
+          "goluri": 2,
+          "pase": 0
+        },
+        {
+          "jucator": "Mugurel Buga",
+          "echipa": "România",
+          "m": 0,
+          "goluri": 2,
+          "pase": 0
+        },
+        {
+          "jucator": "Vasile Maftei",
+          "echipa": "România",
+          "m": 3,
+          "goluri": 2,
+          "pase": 0
+        },
+        {
+          "jucator": "Marius Măldărășanu",
+          "echipa": "România",
+          "m": 0,
+          "goluri": 2,
+          "pase": 0
+        },
+        {
+          "jucator": "Milos Bogdanovic",
+          "echipa": "Serbia",
+          "m": 1,
+          "goluri": 1,
+          "pase": 0
+        },
+        {
+          "jucator": "Răzvan Fritea",
+          "echipa": "România",
+          "m": 0,
+          "goluri": 1,
+          "pase": 0
+        },
+        {
+          "jucator": "Constantin Schumacher",
+          "echipa": "România",
+          "m": 2,
+          "goluri": 1,
+          "pase": 0
+        },
+        {
+          "jucator": "Ionuţ Savu",
+          "echipa": "România",
+          "m": 1,
+          "goluri": 1,
+          "pase": 0
+        },
+        {
+          "jucator": "Bobi Verdeș",
+          "echipa": "România",
+          "m": 1,
+          "goluri": 1,
+          "pase": 0
+        },
+        {
+          "jucator": "Marius Sava",
+          "echipa": "România",
+          "m": 2,
+          "goluri": 1,
+          "pase": 0
+        },
+        {
+          "jucator": "Ionuț Stancu",
+          "echipa": "România",
+          "m": 0,
+          "goluri": 1,
+          "pase": 0
+        },
+        {
+          "jucator": "Ovidiu Sabău",
+          "echipa": "România",
+          "m": 5,
+          "goluri": 1,
+          "pase": 0
+        },
+        {
+          "jucator": "Mihai Stere",
+          "echipa": "România",
+          "m": 0,
+          "goluri": 1,
+          "pase": 0
+        },
+        {
+          "jucator": "Emmanuel Godfroid",
+          "echipa": "Belgia",
+          "m": 3,
+          "goluri": 1,
+          "pase": 0
+        },
+        {
+          "jucator": "Ion Voicu",
+          "echipa": "România",
+          "m": 3,
+          "goluri": 1,
+          "pase": 0
+        },
+        {
+          "jucator": "Claudiu Răducanu",
+          "echipa": "România",
+          "m": 1,
+          "goluri": 1,
+          "pase": 0
+        }
+      ]
     },
     "2001/02": {
       "clasament": [
@@ -46780,7 +51028,184 @@
             "marcatori": []
           }
         ]
-      }
+      },
+      "statistici_jucatori": [
+        {
+          "jucator": "Gigel Bucur",
+          "echipa": "România",
+          "m": 0,
+          "goluri": 4,
+          "pase": 0
+        },
+        {
+          "jucator": "Călin Mada",
+          "echipa": "România",
+          "m": 0,
+          "goluri": 3,
+          "pase": 0
+        },
+        {
+          "jucator": "Mihai Guriţă",
+          "echipa": "România",
+          "m": 1,
+          "goluri": 3,
+          "pase": 0
+        },
+        {
+          "jucator": "Claudiu Balaci",
+          "echipa": "România",
+          "m": 3,
+          "goluri": 3,
+          "pase": 0
+        },
+        {
+          "jucator": "Ionuț Mazilu",
+          "echipa": "România",
+          "m": 0,
+          "goluri": 3,
+          "pase": 0
+        },
+        {
+          "jucator": "Claudiu Niculescu",
+          "echipa": "România",
+          "m": 1,
+          "goluri": 3,
+          "pase": 0
+        },
+        {
+          "jucator": "Sergiu Radu",
+          "echipa": "România",
+          "m": 0,
+          "goluri": 2,
+          "pase": 0
+        },
+        {
+          "jucator": "Cătălin Cursaru",
+          "echipa": "România",
+          "m": 0,
+          "goluri": 2,
+          "pase": 0
+        },
+        {
+          "jucator": "Daniel Isăilă",
+          "echipa": "România",
+          "m": 0,
+          "goluri": 2,
+          "pase": 0
+        },
+        {
+          "jucator": "Valentin Bădoi",
+          "echipa": "România",
+          "m": 1,
+          "goluri": 2,
+          "pase": 0
+        },
+        {
+          "jucator": "Sorin Vlaicu",
+          "echipa": "România",
+          "m": 2,
+          "goluri": 2,
+          "pase": 0
+        },
+        {
+          "jucator": "Cristian Vasc",
+          "echipa": "România",
+          "m": 1,
+          "goluri": 2,
+          "pase": 0
+        },
+        {
+          "jucator": "Florin Călin",
+          "echipa": "România",
+          "m": 1,
+          "goluri": 2,
+          "pase": 0
+        },
+        {
+          "jucator": "Adrian Săvoiu",
+          "echipa": "România",
+          "m": 7,
+          "goluri": 2,
+          "pase": 0
+        },
+        {
+          "jucator": "Nicolae Dică",
+          "echipa": "România",
+          "m": 1,
+          "goluri": 2,
+          "pase": 0
+        },
+        {
+          "jucator": "Marius Șumudică",
+          "echipa": "România",
+          "m": 0,
+          "goluri": 1,
+          "pase": 0
+        },
+        {
+          "jucator": "Florin Axinia",
+          "echipa": "România",
+          "m": 0,
+          "goluri": 1,
+          "pase": 0
+        },
+        {
+          "jucator": "Cosmin Chirea",
+          "echipa": "România",
+          "m": 1,
+          "goluri": 1,
+          "pase": 0
+        },
+        {
+          "jucator": "Călin Mariș",
+          "echipa": "România",
+          "m": 7,
+          "goluri": 1,
+          "pase": 0
+        },
+        {
+          "jucator": "Florin Bătrânu",
+          "echipa": "România",
+          "m": 2,
+          "goluri": 1,
+          "pase": 0
+        },
+        {
+          "jucator": "Mihai Stere",
+          "echipa": "România",
+          "m": 0,
+          "goluri": 1,
+          "pase": 0
+        },
+        {
+          "jucator": "Ion Vlădoiu",
+          "echipa": "România",
+          "m": 0,
+          "goluri": 1,
+          "pase": 0
+        },
+        {
+          "jucator": "Adrian Voicu",
+          "echipa": "România",
+          "m": 0,
+          "goluri": 1,
+          "pase": 0
+        },
+        {
+          "jucator": "Dănuț Șomcherechi",
+          "echipa": "România",
+          "m": 1,
+          "goluri": 1,
+          "pase": 0
+        },
+        {
+          "jucator": "Mugur Bolohan",
+          "echipa": "România",
+          "m": 0,
+          "goluri": 1,
+          "pase": 0
+        }
+      ]
     },
     "2000/01": {
       "clasament": [
@@ -47108,7 +51533,8 @@
             "marcatori": []
           }
         ]
-      }
+      },
+      "statistici_jucatori": []
     },
     "1999/00": {
       "clasament": [
@@ -47436,7 +51862,8 @@
             "marcatori": []
           }
         ]
-      }
+      },
+      "statistici_jucatori": []
     },
     "1998/99": {
       "clasament": [
@@ -47764,7 +52191,8 @@
             "marcatori": []
           }
         ]
-      }
+      },
+      "statistici_jucatori": []
     },
     "1997/98": {
       "clasament": [
@@ -48092,7 +52520,8 @@
             "marcatori": []
           }
         ]
-      }
+      },
+      "statistici_jucatori": []
     },
     "1996/97": {
       "clasament": [
@@ -48420,7 +52849,8 @@
             "marcatori": []
           }
         ]
-      }
+      },
+      "statistici_jucatori": []
     },
     "1995/96": {
       "clasament": [
@@ -48748,7 +53178,8 @@
             "marcatori": []
           }
         ]
-      }
+      },
+      "statistici_jucatori": []
     },
     "1994/95": {
       "clasament": [
@@ -49076,7 +53507,8 @@
             "marcatori": []
           }
         ]
-      }
+      },
+      "statistici_jucatori": []
     },
     "1993/94": {
       "clasament": [
@@ -49404,7 +53836,8 @@
             "marcatori": []
           }
         ]
-      }
+      },
+      "statistici_jucatori": []
     },
     "1992/93": {
       "clasament": [
@@ -49732,7 +54165,8 @@
             "marcatori": []
           }
         ]
-      }
+      },
+      "statistici_jucatori": []
     },
     "1991/92": {
       "clasament": [
@@ -50060,7 +54494,8 @@
             "marcatori": []
           }
         ]
-      }
+      },
+      "statistici_jucatori": []
     },
     "1990/91": {
       "clasament": [
@@ -50388,7 +54823,8 @@
             "marcatori": []
           }
         ]
-      }
+      },
+      "statistici_jucatori": []
     }
   }
 }
