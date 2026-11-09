@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="ro">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Liga 1 Pixel Hub - Clasamente & Golgheteri</title>
+    <link href="https://fonts.googleapis.com/css2?family=Press+Start+2P&family=VT323&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css?v=6">
+</head>
+<body data-page="istorie">
+    <div class="pitch-background">
+        <div class="pitch-border">
+            <div class="penalty-box top"></div>
+            <div class="center-line"></div>
+            <div class="center-circle"></div>
+            <div class="center-spot"></div>
+            <div class="penalty-box bottom"></div>
+        </div>
+    </div>
+
+    <div class="app-wrapper wide-wrapper">
+        <header>
+            <div class="title-banner"><h1>LIGA 1 PIXEL HUB</h1></div>
+            <nav class="arcade-tabs">
+                <a href="index.html" class="tab-btn">🏁 PIXEL GRID (X & 0)</a>
+                <a href="clasamente.html" class="tab-btn active">🏆 CLASAMENTE & GOLGHETERI</a>
+                <a href="meci.html" class="tab-btn">⚽ MECI 11v11 VS AI</a>
+            </nav>
+        </header>
+
+        <section class="tab-view">
+            <div class="controls-bar wide-bar">
+                <div>SEZON: <select id="select-sezon" class="pixel-select"></select></div>
+                <div>ETAPA: <select id="select-etapa" class="pixel-select"></select></div>
+            </div>
+
+            <div class="istorie-grid-3col">
+                <!-- 1. Clasament Echipe -->
+                <div class="retro-panel">
+                    <h2 class="panel-title">📊 CLASAMENT & RATING 8-BIT</h2>
+                    <div class="table-scroll">
+                        <table id="tabel-clasament" class="pixel-table">
+                            <thead>
+                                <tr><th>#</th><th>ECHIPĂ</th><th>M</th><th>V</th><th>E</th><th>Î</th><th>GOL</th><th>PCT</th><th>OVR</th></tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- 2. Tabela Marcatorilor & Pasatorilor Decisivi -->
+                <div class="retro-panel">
+                    <h2 class="panel-title">👟 GOLGHETERI & PASATORI DECISIVI</h2>
+                    <div class="table-scroll">
+                        <table id="tabel-marcatori" class="pixel-table">
+                            <thead>
+                                <tr><th>#</th><th>JUCĂTOR</th><th>CLUB</th><th>⚽ GOL</th><th>🎯 PASE</th></tr>
+                            </thead>
+                            <tbody></tbody>
+                        </table>
+                    </div>
+                </div>
+
+                <!-- 3. Rezultate pe Etape -->
+                <div class="retro-panel">
+                    <h2 class="panel-title">⚽ REZULTATE ETAPĂ</h2>
+                    <div id="lista-meciuri" class="matches-scroll"></div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <script src="script.js?v=6"></script>
+</body>
+</html>
